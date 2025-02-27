@@ -1,10 +1,10 @@
+import FAQSection from "@/components/faqs/faqs";
 import React from "react";
-import HomePage from "./(pages)/Home/home";
 
 const page = () => {
   return (
     <div>
-      <HomePage />
+      <FAQSection />
     </div>
   );
 };
