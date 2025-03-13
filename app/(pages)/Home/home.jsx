@@ -5,8 +5,13 @@ import { HeroSection } from "@/components/hero/heroSection";
 import Projects from "@/components/projects/projects";
 import ReviewsSection from "@/components/review/review";
 import Services from "@/components/services/services";
-import { Stats, Stats2 } from "@/components/state/state";
-import React from "react";
+import {
+  PremiumProcessSection,
+  PremiumProcessSection2,
+  Stats,
+  Stats2,
+} from "@/components/state/state";
+import { FloatingWhatsApp } from "@/components/whatsapp/floatingWhatsapp";
 
 const HomePage = () => {
   return (
@@ -14,11 +19,13 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <Stats />
-      <Stats2 />
+      <PremiumProcessSection />
       <Services />
       <Projects />
       <Features />
       <ReviewsSection />
+
+      <FloatingWhatsApp />
       <Footer />
     </div>
   );

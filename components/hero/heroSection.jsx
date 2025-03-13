@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-white w-full overflow-x-hidden min-h-screen">
+    <div className="relative bg-white w-full overflow-x-hidden min-h-min sm:pt-8 pt-4">
       {/* Decorative Background Elements */}
 
       <div className="absolute inset-0 overflow-hidden">
@@ -31,36 +31,37 @@ const HeroSection = () => {
       <div className="relative">
         {/* Hero Content */}
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column */}
 
             <div className="space-y-6 md:space-y-8 text-center lg:text-left">
               <div className="space-y-4 md:space-y-6 flex flex-col items-center lg:items-start">
-                <div className="inline-flex items-center space-x-2 bg-slate-900 text-white px-3 py-1.5 rounded-full">
+                {/* <div className="inline-flex items-center space-x-2 bg-slate-900 text-white px-3 py-1.5 rounded-full">
                   <span className="text-xs font-medium">
                     Award Winning Construction Company
                   </span>
 
                   <ChevronRight className="h-3 w-3" />
-                </div>
+                </div> */}
 
                 <div className="space-y-2 w-full">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.2] pb-1">
-                    Building
+                    Transform Your Vision Into Reality
                   </h1>
 
                   <div className="relative">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent leading-[1.2] tracking-tight pb-3">
-                      Tomorrow's Legacy
+                      with Expert Services
                     </h1>
                   </div>
                 </div>
 
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0 pt-2">
-                  Crafting architectural masterpieces that define skylines and
-                  transform communities, with unparalleled expertise and
-                  innovative solutions.
+                  Full-service construction solutions dedicated to delivering
+                  high-quality residential and commercial projects. From concept
+                  to completion, every vision is prioritized to ensure
+                  exceptional results
                 </p>
               </div>
 
@@ -83,7 +84,6 @@ const HeroSection = () => {
               </div>
 
               {/* Feature Cards */}
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 max-w-2xl mx-auto lg:mx-0">
                 <div className="bg-white shadow-lg shadow-slate-100 p-4 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-xl group">
                   <div className="flex items-center gap-3 justify-center lg:justify-start">
@@ -136,7 +136,10 @@ const HeroSection = () => {
                   playsInline
                   className="w-full h-[250px] sm:h-[350px] lg:h-[500px] object-cover"
                 >
-                  <source src="/showcase-video.mp4" type="video/mp4" />
+                  <source
+                    src="https://cdc.construction/video/CDC.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
 
@@ -144,7 +147,7 @@ const HeroSection = () => {
 
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-center lg:text-left">
                   <h3 className="text-lg md:text-xl font-bold mb-1 text-white">
-                    The Pinnacle Tower
+                    The CDC
                   </h3>
 
                   <p className="text-sm text-slate-200">
@@ -154,26 +157,6 @@ const HeroSection = () => {
               </div>
 
               {/* Achievement Cards */}
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-slate-900 p-4 md:p-6 rounded-2xl text-white text-center lg:text-left">
-                  <Trophy className="h-6 w-6 text-red-500 mb-3 mx-auto lg:mx-0" />
-
-                  <h3 className="text-lg font-semibold mb-1">Best in Class</h3>
-
-                  <p className="text-xs text-slate-400">
-                    Industry Recognition 2024
-                  </p>
-                </div>
-
-                <div className="bg-red-600 p-4 md:p-6 rounded-2xl text-white text-center lg:text-left">
-                  <Building2 className="h-6 w-6 text-white mb-3 mx-auto lg:mx-0" />
-
-                  <h3 className="text-lg font-semibold mb-1">150+ Projects</h3>
-
-                  <p className="text-xs text-red-100">Completed Successfully</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -217,12 +200,12 @@ const AboutHero = () => {
 
           <div className="space-y-10">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
                 Solid foundations for a{" "}
                 <span className="text-[#E12D2D] inline-block transform hover:scale-105 transition-transform duration-300">
                   brighter future
                 </span>
-              </h1>
+              </h2>
 
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
                 We are more than just a construction company. We understand that

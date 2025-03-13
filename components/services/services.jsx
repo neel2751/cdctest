@@ -2,80 +2,86 @@ import { ArrowRight, ChevronRight, Layout } from "lucide-react";
 
 const services = [
   {
-    title: "Commercial (Fit-Out)",
-
-    category: "Commercial Excellence",
-
-    description:
-      "Innovative designs to elevate your business environment gracefully.",
-
-    imageUrl: "/images/commercial-fitout.jpg",
-
-    href: "/services/commercial-fitout",
-  },
-
-  {
-    title: "Extension",
-
-    category: "Space Enhancement",
-
-    description: "Expand living space with our expertly designed extension.",
-
-    imageUrl: "/images/extension.jpg",
-
-    href: "/services/extension",
-  },
-
-  {
     title: "Architectural Design",
 
     category: "Design Excellence",
 
     description:
-      "Crafting visionary spaces that redefine luxury living through innovative architectural solutions and meticulous attention to detail.",
+      " Innovative and creative architectural designs that meet your needs and exceed your expectations.",
+    // "Innovative designs to elevate your business environment gracefully.",
+    imageUrl: "https://cdc.construction/images/services/Arch.webp",
 
-    imageUrl: "/images/architectural-design.jpg",
-
-    href: "/Services/architectural-design",
+    href: "/services/commercial-fitout",
   },
 
   {
     title: "Design and Build",
 
-    category: "Integrated Solutions",
+    category: "Design Excellence",
 
     description:
-      "A seamless journey from concept to reality, where every detail is crafted to perfection under one unified vision.",
+      " Expand with our comprehensive design and build services, tailored to meet your unique needs and exceed your expectations.",
+    // "Expand living space with our expertly designed extension.",
 
-    imageUrl: "/images/design-build.jpg",
+    imageUrl: "https://cdc.construction/images/services/Build.webp",
+
+    href: "/services/extension",
+  },
+
+  {
+    title: "Loft Conversion",
+
+    category: "Design Excellence",
+
+    description:
+      " Transform your loft space into a beautiful and functional living area with our expert loft conversion services.",
+    // "Crafting visionary spaces that redefine luxury living through innovative architectural solutions and meticulous attention to detail.",
+
+    imageUrl: "https://cdc.construction/images/services/Loft.webp",
+
+    href: "/Services/architectural-design",
+  },
+
+  {
+    title: "Renovation and Refurbishment",
+
+    category: "Retrofitting",
+
+    description:
+      " Transform your existing space into a modern and functional living area with our expert renovation and refurbishment services.",
+    // "A seamless journey from concept to reality, where every detail is crafted to perfection under one unified vision.",
+
+    imageUrl: "https://cdc.construction/images/services/Reno.webp",
 
     href: "/Services/build-and-design",
   },
 
   {
-    title: "Loft Conversions",
+    title: "New Build",
 
     category: "Space Innovation",
 
     description:
-      "Transforming overlooked spaces into breathtaking living areas that maximize both functionality and aesthetic appeal.",
+      "Build your dream home from the ground up with our comprehensive new build services, tailored to meet your unique needs and exceed your expectations.",
+    // "Transforming overlooked spaces into breathtaking living areas that maximize both functionality and aesthetic appeal.",
 
-    imageUrl: "/images/loft-conversion.jpg",
+    imageUrl: "https://cdc.construction/images/services/NewBuild.webp",
 
     href: "/Services/loft-conversions",
   },
 
   {
-    title: "Luxury Renovation",
+    title: "Extension",
 
-    category: "Premium Transformation",
+    category: "Expansion Expertise",
 
     description:
-      "Elevating existing spaces with sophisticated design elements and premium materials for an unparalleled living experience.",
+      "Expand your living space with our expert extension services, where every detail is carefully planned to creat a seamless and functional addition to your home.",
+    // "Bringing dreams to life through meticulously planned and expertly executed new build projects that set new standards.",
 
-    imageUrl: "/images/renovation.jpg",
+    imageUrl: "https://cdc.construction/images/services/Extension.webp",
 
-    href: "/Services/renovations",
+    href: "/Services/new-build",
   },
 
   {
@@ -86,22 +92,24 @@ const services = [
     description:
       "Creating extraordinary subterranean spaces that blend seamlessly with your home while adding significant value.",
 
-    imageUrl: "/images/basement.jpg",
+    imageUrl: "https://cdc.construction/images/services/Basement.webp",
 
     href: "/Services/basements",
   },
 
   {
-    title: "New Build",
+    title: "Commercial (Fit-Out)",
 
-    category: "Bespoke Creation",
+    category: "Workplace Innovation",
 
     description:
-      "Bringing dreams to life through meticulously planned and expertly executed new build projects that set new standards.",
+      "Transforming commercial spaces into vibrant and productive environments that inspire collaboration and creativity.",
+    // "Elevate your living space with our expert interior design services, where every detail is carefully curated to create a harmonious and functional environment.",
+    // "Elevating existing spaces with sophisticated design elements and premium materials for an unparalleled living experience.",
 
-    imageUrl: "/images/new-build.jpg",
+    imageUrl: "https://cdc.construction/images/services/Comm.webp",
 
-    href: "/Services/new-build",
+    href: "/Services/renovations",
   },
 ];
 const Services = () => (
@@ -119,9 +127,12 @@ const Services = () => (
           Exceptional Services
         </div>
 
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-          Crafting Excellence in
-          <span className="relative ml-2 inline-block text-red-600">
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl text-pretty">
+          {/* Crafting Excellence in */}
+          {/* Exceptional Service in */}
+          Exceptional Service in
+          <span className="relative ml-2 text-red-600">
+            {/* Construction */}
             Construction
             <svg
               className="absolute -bottom-2 left-0 h-3 w-full"
@@ -138,15 +149,18 @@ const Services = () => (
           </span>
         </h2>
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-xl lg:text-2xl">
-          Where vision meets craftsmanship, creating spaces that inspire and
-          endure through generations.
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-lg lg:text-xl">
+          At CDC, we pride ourselves on delivering exceptional services that
+          exceed expectations. Our team of experts is dedicated to providing
+          top-notch solutions that meet the unique needs of each project.
+          {/* Where vision meets craftsmanship, creating spaces that inspire and
+          endure through generations. */}
         </p>
       </div>
 
       {/* Services Grid */}
 
-      <div className="mt-16 grid gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 grid gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} index={index} />
         ))}
@@ -182,7 +196,7 @@ const ServiceCard = ({
   description,
 }) => (
   <a href={href} className="group relative block">
-    <div className="relative h-full overflow-hidden rounded-2xl bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-600/20">
+    <div className="relative h-full overflow-hidden rounded-2xl shadow bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-600/20">
       <div className="relative aspect-[16/10] w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
 
