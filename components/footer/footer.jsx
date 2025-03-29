@@ -1,4 +1,5 @@
 "use client";
+import { FOOTERBLOCKS, FOOTERLINKS, LOGOS, services } from "@/data/data";
 import {
   ArrowRight,
   CheckCircle,
@@ -11,7 +12,9 @@ import {
   Phone,
   Youtube,
 } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
+import { Input } from "../ui/input";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -41,88 +44,41 @@ const Footer = () => {
           {/* Company Information Column */}
 
           <div className="space-y-8">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col items-start space-y-4">
               <img
-                src="/images/logo.png"
+                src="https://cdc.construction/images/CDC_LOGO.svg"
                 alt="CDC Construction"
-                className="h-12 w-auto mb-6 filter drop-shadow-md"
+                title="CDC Construction"
+                className="h-10 filter drop-shadow-md"
               />
-
-              <p className="text-sm text-gray-600 leading-relaxed">
+              {/* <p className="text-sm text-gray-600 leading-relaxed">
                 With over two decades of excellence in construction and
                 development, we transform spaces into extraordinary environments
                 that inspire and endure.
-              </p>
+              </p> */}
             </div>
 
             {/* Contact Information */}
-
             <div className="space-y-4">
-              <div className="flex items-center space-x-3 group cursor-pointer transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 group-hover:bg-gray-100">
-                  <Phone className="h-4 w-4 text-red-500" />
-                </div>
-
-                <div>
-                  <p className="text-xs text-gray-500 font-medium">Call Us</p>
-
-                  <a
-                    href="tel:020-8004-3327"
-                    className="text-sm text-gray-900 font-semibold hover:text-red-500"
-                  >
-                    020-8004-3327
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 group cursor-pointer transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 group-hover:bg-gray-100">
-                  <Mail className="h-4 w-4 text-red-500" />
-                </div>
-
-                <div>
-                  <p className="text-xs text-gray-500 font-medium">Email Us</p>
-
-                  <a
-                    href="mailto:info@cdc.construction"
-                    className="text-sm text-gray-900 font-semibold hover:text-red-500"
-                  >
-                    info@cdc.construction
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 group cursor-pointer transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 group-hover:bg-gray-100">
-                  <MapPin className="h-4 w-4 text-red-500" />
-                </div>
-
-                <div>
-                  <p className="text-xs text-gray-500 font-medium">Visit Us</p>
-
-                  <p className="text-sm text-gray-900 font-semibold">
-                    595a Cranbrook Road,
-                    <br />
-                    Ilford, IG2 6JZ
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 group cursor-pointer transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 group-hover:bg-gray-100">
-                  <Clock className="h-4 w-4 text-red-500" />
-                </div>
-
-                <div>
-                  <p className="text-xs text-gray-500 font-medium">
-                    Working Hours
-                  </p>
-
-                  <p className="text-sm text-gray-900 font-semibold">
-                    Mon - Sat: 9:00 - 18:00
-                  </p>
-                </div>
-              </div>
+              {FOOTERLINKS.map((item) => (
+                <Link
+                  href={item?.link}
+                  key={item?.title}
+                  className="flex items-center space-x-3 group cursor-pointer transition-all duration-300 hover:translate-x-1"
+                >
+                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-red-50 group-hover:bg-red-100">
+                    <item.icon className="h-4 w-4 text-red-500" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-medium">
+                      {item.title}
+                    </p>
+                    <span className="text-sm text-gray-900 font-semibold group-hover:text-red-500">
+                      {item?.text}
+                    </span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -136,28 +92,20 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 "Home",
-
                 "About Us",
-
                 "Our Projects",
-
                 "Meet the Team",
-
                 "Careers",
-
                 "Contact",
-
                 "Sitemap",
               ].map((item) => (
                 <li key={item} className="group">
-                  <a
+                  <Link
                     href={`/${item.toLowerCase().replace(" ", "-")}`}
-                    className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                    className="inline-flex items-center text-sm text-gray-600 transition-colors duration-200 hover:border-b hover:border-red-600 hover:text-red-600"
                   >
-                    <ArrowRight className="h-3 w-3 mr-2 text-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -171,34 +119,14 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3">
-              {[
-                "Architectural Design",
-
-                "Design and Build",
-
-                "Loft Conversions",
-
-                "Luxury Renovation",
-
-                "Basement Conversions",
-
-                "New Build Projects",
-
-                "Home Extension",
-
-                "Commercial Fit-Out",
-              ].map((service) => (
-                <li key={service} className="group">
-                  <a
-                    href={`/services/${service
-                      .toLowerCase()
-                      .replace(" ", "-")}`}
-                    className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
+              {services.map((service, index) => (
+                <li key={index} className="group">
+                  <Link
+                    href={`services/${service?.href}`}
+                    className="inline-flex items-center text-sm text-gray-600 transition-colors duration-200 hover:border-b hover:border-red-600 hover:text-red-600"
                   >
-                    <ArrowRight className="h-3 w-3 mr-2 text-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-
-                    {service}
-                  </a>
+                    {service?.title}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -219,12 +147,12 @@ const Footer = () => {
 
               <form onSubmit={handleSubscribe} className="relative">
                 <div className="flex flex-col space-y-2">
-                  <input
+                  <Input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 transition-all duration-200"
+                    className="w-full h-12 focus-visible:ring-1 focus-visible:ring-red-400 transition-all duration-200 appearance-none"
                     required
                   />
 
@@ -252,17 +180,15 @@ const Footer = () => {
               </h3>
 
               <div className="flex flex-wrap gap-4">
-                <img
-                  src="/images/master.png"
-                  alt="Master Builders"
-                  className="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300"
-                />
-
-                <img
-                  src="/images/trustmark.png"
-                  alt="Trustmark"
-                  className="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300"
-                />
+                {LOGOS.map((item, index) => (
+                  <img
+                    key={index}
+                    src={item?.mainImageUrl}
+                    alt={item?.alt}
+                    title={item.alt}
+                    className="h-16 w-auto filter hover:grayscale transition-all duration-300 cursor-pointer"
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -270,31 +196,27 @@ const Footer = () => {
 
         {/* Bottom Bar */}
 
-        <div className="mt-16 pt-8 border-t border-gray-200">
+        <div className="mt-8 pt-4 border-t border-gray-200">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="flex items-center space-x-6">
               <div className="flex space-x-6 text-sm">
-                <a
-                  href="/terms"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Terms
-                </a>
-
-                <a
-                  href="/privacy"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Privacy
-                </a>
-
-                <a
-                  href="/cookie"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Cookies
-                </a>
+                {["Terms", "Privacy", "Cookies"].map((item) => (
+                  <Link
+                    href={item.toLowerCase()}
+                    key={item}
+                    className="text-neutral-600 hover:text-neutral-800 transition-colors duration-300"
+                  >
+                    {item}
+                  </Link>
+                ))}
               </div>
+            </div>
+            <div className="mt-4 text-center text-sm text-gray-600 group cursor-pointer">
+              © {new Date().getFullYear()}{" "}
+              <span className="text-pretty font-medium group-hover:text-red-600 transition-colors duration-300">
+                Creative Design & Construction.
+              </span>{" "}
+              All rights reserved.
             </div>
 
             {/* Social Links */}
@@ -321,10 +243,6 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-
-          <div className="mt-8 text-center text-sm text-gray-500">
-            © {new Date().getFullYear()} CDC Construction. All rights reserved.
-          </div>
         </div>
       </div>
     </footer>

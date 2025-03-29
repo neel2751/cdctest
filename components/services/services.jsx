@@ -1,117 +1,17 @@
-import { ArrowRight, ChevronRight, Layout } from "lucide-react";
+import { services } from "@/data/data";
+import {
+  ArrowRight,
+  ChevronRight,
+  HardHat,
+  Layout,
+  Telescope,
+} from "lucide-react";
+import Link from "next/link";
+import SmallCTA from "../cta/smallCTA";
+import GridCard from "../general/gridCard";
+import { Button } from "../ui/button";
+import Heading from "../header/heading";
 
-const services = [
-  {
-    title: "Architectural Design",
-
-    category: "Design Excellence",
-
-    description:
-      " Innovative and creative architectural designs that meet your needs and exceed your expectations.",
-    // "Innovative designs to elevate your business environment gracefully.",
-    imageUrl: "https://cdc.construction/images/services/Arch.webp",
-
-    href: "/services/commercial-fitout",
-  },
-
-  {
-    title: "Design and Build",
-
-    category: "Design Excellence",
-
-    description:
-      " Expand with our comprehensive design and build services, tailored to meet your unique needs and exceed your expectations.",
-    // "Expand living space with our expertly designed extension.",
-
-    imageUrl: "https://cdc.construction/images/services/Build.webp",
-
-    href: "/services/extension",
-  },
-
-  {
-    title: "Loft Conversion",
-
-    category: "Design Excellence",
-
-    description:
-      " Transform your loft space into a beautiful and functional living area with our expert loft conversion services.",
-    // "Crafting visionary spaces that redefine luxury living through innovative architectural solutions and meticulous attention to detail.",
-
-    imageUrl: "https://cdc.construction/images/services/Loft.webp",
-
-    href: "/Services/architectural-design",
-  },
-
-  {
-    title: "Renovation and Refurbishment",
-
-    category: "Retrofitting",
-
-    description:
-      " Transform your existing space into a modern and functional living area with our expert renovation and refurbishment services.",
-    // "A seamless journey from concept to reality, where every detail is crafted to perfection under one unified vision.",
-
-    imageUrl: "https://cdc.construction/images/services/Reno.webp",
-
-    href: "/Services/build-and-design",
-  },
-
-  {
-    title: "New Build",
-
-    category: "Space Innovation",
-
-    description:
-      "Build your dream home from the ground up with our comprehensive new build services, tailored to meet your unique needs and exceed your expectations.",
-    // "Transforming overlooked spaces into breathtaking living areas that maximize both functionality and aesthetic appeal.",
-
-    imageUrl: "https://cdc.construction/images/services/NewBuild.webp",
-
-    href: "/Services/loft-conversions",
-  },
-
-  {
-    title: "Extension",
-
-    category: "Expansion Expertise",
-
-    description:
-      "Expand your living space with our expert extension services, where every detail is carefully planned to creat a seamless and functional addition to your home.",
-    // "Bringing dreams to life through meticulously planned and expertly executed new build projects that set new standards.",
-
-    imageUrl: "https://cdc.construction/images/services/Extension.webp",
-
-    href: "/Services/new-build",
-  },
-
-  {
-    title: "Basement Conversions",
-
-    category: "Underground Luxury",
-
-    description:
-      "Creating extraordinary subterranean spaces that blend seamlessly with your home while adding significant value.",
-
-    imageUrl: "https://cdc.construction/images/services/Basement.webp",
-
-    href: "/Services/basements",
-  },
-
-  {
-    title: "Commercial (Fit-Out)",
-
-    category: "Workplace Innovation",
-
-    description:
-      "Transforming commercial spaces into vibrant and productive environments that inspire collaboration and creativity.",
-    // "Elevate your living space with our expert interior design services, where every detail is carefully curated to create a harmonious and functional environment.",
-    // "Elevating existing spaces with sophisticated design elements and premium materials for an unparalleled living experience.",
-
-    imageUrl: "https://cdc.construction/images/services/Comm.webp",
-
-    href: "/Services/renovations",
-  },
-];
 const Services = () => (
   <section className="relative z-10 bg-gradient-to-b from-white via-gray-50 to-white py-24 sm:py-32">
     {/* Background Elements */}
@@ -122,34 +22,11 @@ const Services = () => (
       {/* Header Section */}
 
       <div className="relative mx-auto max-w-3xl text-center">
-        <div className="mb-6 inline-flex items-center rounded-full bg-red-600/10 px-6 py-2 text-red-600">
-          <span className="mr-2 inline-block h-2 w-2 rounded-full bg-red-600"></span>
-          Exceptional Services
-        </div>
+        <SmallCTA Icon={HardHat} text={"Explore our services"} />
+        <Heading title={"Exceptional Service in"} subtitle={"Construction"} />
 
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl text-pretty">
-          {/* Crafting Excellence in */}
-          {/* Exceptional Service in */}
-          Exceptional Service in
-          <span className="relative ml-2 text-red-600">
-            {/* Construction */}
-            Construction
-            <svg
-              className="absolute -bottom-2 left-0 h-3 w-full"
-              viewBox="0 0 100 12"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0,0 Q50,12 100,0"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-            </svg>
-          </span>
-        </h2>
-
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-lg lg:text-xl">
+        {/* <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-lg lg:text-xl"> */}
+        <p className="mx-auto mt-6 max-w-2xl text-base text-gray-600 sm:text-base lg:text-lg">
           At CDC, we pride ourselves on delivering exceptional services that
           exceed expectations. Our team of experts is dedicated to providing
           top-notch solutions that meet the unique needs of each project.
@@ -164,19 +41,30 @@ const Services = () => (
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} index={index} />
         ))}
-        <PortfolioShowcase />
+        <GridCard
+          link={"/projects"}
+          Icon={Layout}
+          smallTitle={"Featured Projects"}
+          title={"View Our Portfolio"}
+          description={
+            "Explore our showcase of completed projects and transformations that demonstrate our commitment to excellence."
+          }
+          button={"Explore All Projects"}
+        />
       </div>
 
       {/* Bottom CTA */}
 
       <div className="mt-16 text-center sm:mt-20">
-        <a
-          href="/services"
-          className="group inline-flex items-center gap-2 rounded-full bg-red-600 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/25"
+        <Button
+          asChild
+          className="bg-red-600 group rounded-full h-12 text-base font-semibold cursor-pointer transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/25 hover:scale-105"
         >
-          View All Services
-          <ArrowRight className="h-5 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
+          <Link href="/services">
+            View All Services
+            <ArrowRight className="h-5 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </Button>
       </div>
     </div>
 
@@ -195,7 +83,7 @@ const ServiceCard = ({
   index,
   description,
 }) => (
-  <a href={href} className="group relative block">
+  <Link href={`/services/${href}`} className="group relative block">
     <div className="relative h-full overflow-hidden rounded-2xl shadow bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-600/20">
       <div className="relative aspect-[16/10] w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
@@ -205,6 +93,7 @@ const ServiceCard = ({
           alt={title}
           className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
           loading={index < 3 ? "eager" : "lazy"}
+          title={title}
         />
 
         <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-white transition-transform duration-300 group-hover:translate-y-2 group-hover:opacity-0">
@@ -223,7 +112,7 @@ const ServiceCard = ({
       <div className="relative p-6 md:p-8">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold leading-tight text-gray-900">
+            <h3 className="text-lg md:text-xl font-semibold leading-tight text-gray-900">
               {title}
             </h3>
 
@@ -240,65 +129,7 @@ const ServiceCard = ({
         </div>
       </div>
     </div>
-  </a>
-);
-
-const PortfolioShowcase = () => (
-  <a href="/portfolio" className="group relative block">
-    <div className="relative h-full overflow-hidden rounded-2xl bg-gradient-to-br from-red-600 to-red-800">
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage: `linear-gradient(#fff 2px, transparent 2px),
-    
-    linear-gradient(90deg, #fff 2px, transparent 2px)`,
-
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
-
-      <div className="relative h-full p-6 md:p-8">
-        <div className="absolute right-6 md:right-4 top-6 md:top-2 flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-          <Layout className="h-6 w-6 md:h-10 md:w-10 text-white" />
-        </div>
-
-        <div className="absolute -bottom-4 -right-4 h-24 w-24 md:h-32 md:w-32 rounded-full bg-red-500/20 backdrop-blur-sm" />
-
-        <div className="absolute -left-8 top-1/2 h-20 w-20 md:h-24 md:w-24 -translate-y-1/2 rounded-full bg-red-700/30 backdrop-blur-sm" />
-
-        <div className="relative z-10 flex h-full flex-col justify-between">
-          <div>
-            <span className="inline-block rounded-full bg-white/10 px-3 py-1 text-sm text-white backdrop-blur-sm">
-              Featured Projects
-            </span>
-
-            <h3 className="mt-4 md:mt-6 text-2xl md:text-3xl font-bold text-white">
-              View Our Portfolio
-            </h3>
-
-            <p className="mt-3 md:mt-4 max-w-md text-base md:text-lg text-red-50/90">
-              Explore our showcase of completed projects and transformations
-              that demonstrate our commitment to excellence.
-            </p>
-          </div>
-
-          <div className="mt-6 md:mt-8">
-            <div className="flex items-center gap-2 text-white">
-              <span className="text-base md:text-lg font-semibold">
-                Explore All Projects
-              </span>
-
-              <ChevronRight className="h-4 w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute inset-0 bg-gradient-to-t from-red-900/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-    </div>
-  </a>
+  </Link>
 );
 
 export default Services;

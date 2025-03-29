@@ -71,8 +71,6 @@ body {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -80,4 +78,86 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-gradientdown {
+  background-image: radial-gradient(
+    140% 107.13% at 50% 10%,
+    transparent 37.41%,
+    #364ef580 69.27%,
+    #6698ff 100%
+  );
+}
+.bg-gradientdownred {
+  background-image: radial-gradient(
+    140% 107.13% at -50% -10%,
+    transparent 37.41%,
+    #dc2626 69.27%,
+    #fca5a5 100%
+  );
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #dc2626;
+  transition: width 0.3s ease;
+}
+
+.team-card:hover::after {
+  width: 100%;
+}
+
+.team-card .view-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .view-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-card .member-image {
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .member-image {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+}
+
+.team-card:hover {
+  animation: pulse 1.5s infinite;
 }

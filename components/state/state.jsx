@@ -11,10 +11,14 @@ import {
   HardHat,
   Key,
 } from "lucide-react";
+import SmallCTA from "../cta/smallCTA";
+import { ABOUTCARD, ABOUTNUMBER } from "@/data/data";
+import Heading from "../header/heading";
 
 const Stats = () => (
   <section className="relative bg-white py-16 md:py-24 overflow-hidden">
     {/* Decorative Background Elements */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-red-500/5 via-transparent to-transparent" />
 
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute top-1/2 -right-48 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30" />
@@ -26,19 +30,11 @@ const Stats = () => (
       {/* Header */}
 
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <div className="mb-6 inline-flex items-center rounded-full bg-red-600/10 px-6 py-2 text-red-600">
-          <span className="mr-2 inline-block h-2 w-2 rounded-full bg-red-600"></span>
-          Excellence in Construction
-        </div>
+        <SmallCTA Icon={Settings} text={"Excellence in Construction"} />
+        <Heading title={"Our Legacy of"} subtitle={"Excellence"} />
 
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-          Our Legacy of{" "}
-          <span className=" bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-            Excellence
-          </span>
-        </h2>
-
-        <p className="text-slate-600 leading-relaxed">
+        {/* <p className="text-slate-600 leading-relaxed"> */}
+        <p className="mx-auto mt-6 max-w-2xl text-base text-gray-600 sm:text-base lg:text-lg">
           Here at Creative Design & Construction (CDC), we consider our attempt
           as pathways for realizing unique designs. Established in 2018,
           Creative Design & Construction is now one of the most reputable
@@ -49,121 +45,43 @@ const Stats = () => (
       {/* Stats Grid */}
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-16">
-        {/* Stat 1 */}
+        {/* Stats */}
+        {ABOUTNUMBER.map((item) => (
+          <div
+            key={item?.text}
+            className="text-center p-6 bg-white rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl"
+          >
+            <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">
+              {item?.number}
+            </div>
 
-        <div className="text-center p-6 bg-white rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl">
-          <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">
-            105+
+            <p className="text-sm text-slate-600">{item?.text}</p>
           </div>
-
-          <p className="text-sm text-slate-600">Projects Completed</p>
-        </div>
-
-        {/* Stat 2 */}
-
-        <div className="text-center p-6 bg-white rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl">
-          <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">
-            99%
-          </div>
-
-          <p className="text-sm text-slate-600">Client Satisfaction</p>
-        </div>
-
-        {/* Stat 3 */}
-
-        <div className="text-center p-6 bg-white rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl">
-          <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">
-            100%
-          </div>
-
-          <p className="text-sm text-slate-600">Fulfilling Projects</p>
-        </div>
-
-        {/* Stat 4 */}
-
-        <div className="text-center p-6 bg-white rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl">
-          <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">
-            30+
-          </div>
-
-          <p className="text-sm text-slate-600">Year industry experience</p>
-        </div>
+        ))}
       </div>
 
       {/* Features Grid */}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Feature 1 */}
+        {ABOUTCARD.map((item) => (
+          <div
+            key={item?.id}
+            className="bg-white p-6 rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl group"
+          >
+            <div className="p-3 bg-red-50 rounded-xl w-fit mb-4 group-hover:bg-red-100 transition-colors duration-300">
+              <item.icon className="h-6 w-6 text-red-600" />
+            </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl group">
-          <div className="p-3 bg-red-50 rounded-xl w-fit mb-4 group-hover:bg-red-100 transition-colors duration-300">
-            <Building2 className="h-6 w-6 text-red-600" />
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">
+              {item?.title}
+            </h3>
+
+            <p className="text-sm text-slate-600 leading-relaxed">
+              {item?.description}
+            </p>
           </div>
-
-          <h3 className="text-lg font-semibold text-slate-900 mb-2">
-            Sustainable Design
-          </h3>
-
-          <p className="text-sm text-slate-600 leading-relaxed">
-            Implementing eco-friendly solutions and sustainable practices in
-            every project.
-          </p>
-        </div>
-
-        {/* Feature 2 */}
-
-        <div className="bg-white p-6 rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl group">
-          <div className="p-3 bg-red-50 rounded-xl w-fit mb-4 group-hover:bg-red-100 transition-colors duration-300">
-            <Shield className="h-6 w-6 text-red-600" />
-          </div>
-
-          <h3 className="text-lg font-semibold text-slate-900 mb-2">
-            Quality Assured
-          </h3>
-
-          <p className="text-sm text-slate-600 leading-relaxed">
-            Ensuring every project meets the highest standards of quality and
-            reliability.
-          </p>
-        </div>
-
-        {/* Feature 3 */}
-
-        <div className="bg-white p-6 rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl group">
-          <div className="p-3 bg-red-50 rounded-xl w-fit mb-4 group-hover:bg-red-100 transition-colors duration-300">
-            <Settings className="h-6 w-6 text-red-600" />
-          </div>
-
-          <h3 className="text-lg font-semibold text-slate-900 mb-2">
-            Advanced Technology
-          </h3>
-
-          <p className="text-sm text-slate-600 leading-relaxed">
-            Leveraging cutting-edge technology to streamline processes and
-            enhance efficiency.
-            {/* Utilizing cutting-edge construction technology and methodologies. */}
-          </p>
-        </div>
-
-        {/* Feature 4 */}
-
-        <div className="bg-white p-6 rounded-2xl shadow-lg shadow-slate-100 border border-slate-100 transition-all duration-300 hover:shadow-xl group">
-          <div className="p-3 bg-red-50 rounded-xl w-fit mb-4 group-hover:bg-red-100 transition-colors duration-300">
-            <Award className="h-6 w-6 text-red-600" />
-          </div>
-
-          <h3 className="text-lg font-semibold text-slate-900 mb-2">
-            Customer Satisfaction
-            {/* Industry Leading */}
-          </h3>
-
-          <p className="text-sm text-slate-600 leading-relaxed">
-            Delivering exceptional customer experiences and exceeding
-            expectations.
-            {/* Recognized excellence with multiple industry awards and
-            certifications. */}
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   </section>
@@ -364,6 +282,7 @@ const PremiumProcessSection = () => {
   return (
     <section className="py-32 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">
       {/* Luxury background patterns */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-500/5 via-transparent to-transparent" />
 
       <div className="absolute inset-0 bg-[linear-gradient(30deg,#00000003_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -378,27 +297,17 @@ const PremiumProcessSection = () => {
       <div className="container mx-auto px-4 relative">
         {/* Premium Section Header */}
 
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center gap-2 px-5 py-2 mb-8 rounded-full border border-red-100 bg-gradient-to-r from-red-50 to-white shadow-sm">
-            <Building2 className="w-4 h-4 text-red-500" />
-
-            <span className="text-sm font-semibold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-              OUR PROCESS
-            </span>
+        <div className="relative mx-auto max-w-3xl text-center mb-16">
+          <SmallCTA text={"Our Process"} Icon={Building2} />
+          <div className="max-w-xl mx-auto">
+            <Heading title={"Transforming Vision"} subtitle={"into Reality"} />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight">
-            Transforming Vision
-            <span className="block bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-              into Reality
-            </span>
-          </h2>
-
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-gray-600 sm:text-base lg:text-lg">
             Our comprehensive process ensures that every project meets the
-            highest standards of quality, functionality, and aesthetics.
-            {/* A seamless journey from concept to completion, guided by expertise
-            and excellence */}
+            highest standards of quality, functionality, and aesthetics. A
+            seamless journey from concept to completion, guided by expertise and
+            excellence
           </p>
         </div>
 

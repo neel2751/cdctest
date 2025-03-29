@@ -1,105 +1,123 @@
+"use client";
 import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Mail } from "lucide-react";
 
-const CTA = () => (
-  <section className="relative w-full overflow-hidden px-20">
-    {/* Background Image */}
+const CTA = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
 
-    <div className="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
-        alt="Modern architecture"
-        className="w-full h-full object-cover"
-      />
+  const validateEmail = (email) => {
+    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return regex.test(email);
+  };
 
-      {/* Gradient Overlay */}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setError("Email is required");
+      return;
+    }
 
-      <div className="absolute inset-0 bg-gradient-to-r from-rose-900/95 via-rose-900/85 to-rose-800/95" />
-    </div>
+    if (!validateEmail(email)) {
+      setError("Invalid email address");
+      return;
+    }
+    setError("");
+    console.log("Form submitted with email:", email);
+    // Handle form submission
+  };
 
-    {/* Content Section */}
+  return (
+    <section className="relative w-full overflow-hidden max-w-7xl mx-auto rounded-2xl mb-10 min-h-[500px]">
+      {/* Background Image with Overlay */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070")',
 
-    <div className="relative min-h-[200px] py-20">
-      {/* Floating Circles */}
+          backgroundSize: "cover",
 
-      <div className="absolute top-4 left-8">
-        <div className="w-24 h-24 rounded-full bg-[#7FD1E3] bg-opacity-90 backdrop-blur-sm animate-float">
-          <div className="w-full h-full flex items-center justify-center">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              className="text-[#0A2518]"
-            >
-              <path
-                fill="currentColor"
-                d="M15 4h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm-8 8h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm8 0h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM7 4h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"
-              />
-            </svg>
-          </div>
-        </div>
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
-      <div className="absolute top-8 right-12">
-        <div className="w-20 h-20 rounded-full bg-[#FFB17A] bg-opacity-90 backdrop-blur-sm animate-float-delayed">
-          <div className="w-full h-full flex items-center justify-center">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              className="text-[#0A2518]"
-            >
-              <path
-                fill="currentColor"
-                d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-11v5h4v2h-6V9h2z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      {/* Content Container */}
 
-      <div className="absolute bottom-8 right-24">
-        <div className="w-28 h-28 rounded-full bg-[#98E2C6] bg-opacity-90 backdrop-blur-sm animate-float-more-delayed">
-          <div className="w-full h-full flex items-center justify-center">
-            <svg
-              width="44"
-              height="44"
-              viewBox="0 0 24 24"
-              className="text-[#0A2518]"
-            >
-              <path
-                fill="currentColor"
-                d="M13.5 2a7.5 7.5 0 0 1 7.5 7.5v6a7.5 7.5 0 0 1-7.5 7.5h-3a7.5 7.5 0 0 1-7.5-7.5v-6A7.5 7.5 0 0 1 10.5 2h3zm-3 3a4.5 4.5 0 0 0-4.5 4.5v6a4.5 4.5 0 0 0 4.5 4.5h3a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 4.5 0 0 0 13.5 5h-3z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center space-y-12 text-center">
+          {/* Heading with Red Shadow */}
 
-      {/* Main Content */}
-
-      <div className="relative container mx-auto px-6 max-w-6xl h-full flex items-center">
-        <div className="text-center max-w-3xl mx-auto space-y-6">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
-            Transform your vision into reality with our help.
+          <h2 className="text-4xl font-bold tracking-tight text-white drop-shadow-[0_5px_20px_rgba(239,68,68,0.7)] md:text-5xl lg:text-6xl max-w-3xl">
+            Transform your vision into reality with our help
           </h2>
 
-          <p className="text-lg text-gray-200 leading-relaxed">
+          {/* Description */}
+
+          <p className="max-w-2xl text-lg text-gray-200">
             Ready to turn your vision into solid ground? We're more than
             builders, we're partners. Let's collaborate, innovate, and craft a
             space that exceeds your wildest dreams.
           </p>
 
-          <div className="pt-4">
-            <button className="group relative inline-flex items-center justify-center px-8 py-3 bg-indigo-600 text-white rounded-lg overflow-hidden transition-all duration-300 hover:bg-blue-700 transform hover:scale-105">
-              <span className="relative z-10 flex items-center font-medium">
-                Get a free quote
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
+          {/* Form Section */}
+
+          <div className="w-full max-w-md">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-4 md:flex-row md:gap-3"
+            >
+              <div className="relative flex-1">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+
+                    setError("");
+                  }}
+                  placeholder="Enter your email"
+                  className="w-full rounded-lg border border-gray-300 bg-white/10 px-4 py-3 text-white placeholder-gray-400 backdrop-blur-sm transition-all focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/50"
+                />
+
+                {error && (
+                  <span className="absolute -bottom-6 left-0 text-sm text-red-400">
+                    {error}
+                  </span>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                className="group flex min-w-[140px] items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-3 text-white transition-all hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 md:px-6"
+              >
+                <span className="whitespace-nowrap">Get Started</span>
+
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </button>
+            </form>
+          </div>
+
+          {/* Additional Contact Info */}
+
+          <div className="flex flex-wrap items-center justify-center gap-2 text-gray-200">
+            <Mail className="h-5 w-5" />
+
+            <span>Or contact us directly at: </span>
+
+            <a
+              href="mailto:info@cdc.construction"
+              className="text-red-400 hover:text-red-300 hover:underline"
+            >
+              info@cdc.construction
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 export { CTA };

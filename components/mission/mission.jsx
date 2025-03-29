@@ -1,4 +1,5 @@
-import { Building2, Sparkles, Users } from "lucide-react";
+import { Building2, Sparkles, Telescope, Users } from "lucide-react";
+import SmallCTA from "../cta/smallCTA";
 
 const MissionSection = () => {
   return (
@@ -15,11 +16,9 @@ const MissionSection = () => {
         {/* Vision Header - Improved text scaling */}
 
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20">
-          <span className="inline-block text-xs sm:text-sm font-medium text-gray-500 tracking-wider uppercase mb-4 sm:mb-6">
-            Our Vision
-          </span>
+          <SmallCTA Icon={Telescope} text={"Our Mission"} />
 
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed px-4">
+          <p className="text-base sm:text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed px-4">
             For as long as there have been cities, the public square has been a
             fundamental part of the urban landscape - an open, approachable
             space to meet and engage with friends and neighbours. Space aims to
@@ -101,7 +100,7 @@ const MissionSection = () => {
 
         {/* Bottom Stats Section - Improved responsive design */}
 
-        <div className="mt-16 sm:mt-20 md:mt-24 bg-gradient-to-br from-red-600 to-red-700 rounded-lg sm:rounded-xl lg:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 text-white">
+        {/* <div className="mt-16 sm:mt-20 md:mt-24 bg-gradient-to-br from-red-600 to-red-700 rounded-lg sm:rounded-xl lg:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 text-white">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
@@ -133,7 +132,7 @@ const MissionSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Decorative Elements - Made responsive and optimized */}
 
