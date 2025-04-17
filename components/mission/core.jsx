@@ -13,17 +13,17 @@ const CoreData = [
   },
   {
     id: 2,
-    title: "Quality",
+    title: "Collaboration",
     description:
-      "We are committed to delivering high-quality products that meet the needs of our customers.",
+      "Working together with our clients to understand requirment and achieve goals to the best of our abilities.",
     imgUrl:
       "https://notioly.com/wp-content/uploads/2025/02/511.Supporting-The-World.png",
   },
   {
     id: 3,
-    title: "Sustainability",
+    title: "Professionalism",
     description:
-      "We are dedicated to creating products that are sustainable and environmentally friendly.",
+      " We are committed to providing a quality and professional service that meets the needs of our customers.",
     imgUrl:
       "https://notioly.com/wp-content/uploads/2025/01/494.A-Break-In-Good-Company.png",
   },
@@ -66,12 +66,12 @@ const Core = () => {
 
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg font-medium group-hover:text-red-600">
-                  Innovation
+                  Expertise
                 </h3>
               </div>
               <p className="text-muted-foreground">
-                We 're constantly pushing the boundaries of what's possible with
-                our cutting-edge solutions that evolve with client needs.
+                An in depth understanding of the London construction industry
+                across a wide range of project types and sectors.
               </p>
             </div>
           </div>
@@ -91,8 +91,9 @@ const Core = () => {
                 </h3>
               </div>
               <p className="text-muted-foreground">
-                We 're constantly pushing the boundaries of what's possible with
-                our cutting-edge solutions that evolve with client needs.
+                We 're constantly pushing the boundaries of what's possible in
+                construction, always looking for new and better ways to deliver.
+                {/* our cutting-edge solutions that evolve with client needs. */}
               </p>
             </div>
           </div>

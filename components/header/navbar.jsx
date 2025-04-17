@@ -22,16 +22,7 @@ import {
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { services, PROJECT } from "@/data/data";
-
-const navigation = [
-  { title: "Home", href: "/" },
-  { title: "Services", href: "/services", items: services },
-  { title: "Projects", href: "/projects", items: PROJECT },
-  { title: "About", href: "/aboutus" },
-  { title: "Team", href: "/team" },
-  { title: "Contact", href: "/contactus" },
-];
+import { services, PROJECT, navigation } from "@/data/data";
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -99,11 +90,14 @@ export function Navbar() {
         </NavigationMenu>
 
         <div className="flex items-center gap-4">
-          <Button className="hidden lg:flex bg-red-600 hover:bg-red-700 rounded-full">
-            Get a Quote
+          <Button
+            asChild
+            className="hidden lg:flex bg-red-600 hover:bg-red-700 rounded-full"
+          >
+            <Link href="/callback">Request a Quote</Link>
           </Button>
           <Button className="lg:hidden bg-red-600 hover:bg-red-700 rounded-full">
-            Request a Quote
+            Get a Quote
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="lg:hidden">

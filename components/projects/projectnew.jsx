@@ -18,7 +18,7 @@ const PremiumProjectsMasonry = () => {
 
         <div className="relative mx-auto max-w-3xl text-center">
           <SmallCTA Icon={Building2} text={"Remarkable Projects"} />
-          <Heading title={"Discover Our latest"} subtitle={"developments"} />
+          <Heading title={"Discover Our latest"} subtitle={"Developments"} />
 
           <p className="mx-auto mt-6 max-w-2xl text-base text-gray-600 sm:text-base lg:text-lg">
             Our latest developments showcase the best of our expertise and

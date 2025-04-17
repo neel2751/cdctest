@@ -1,31 +1,21 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import {
-  Calendar,
-  MapPin,
-  Building,
-  Clock,
-  Maximize,
-  ArrowLeft,
-} from "lucide-react";
+import { MapPin, Building, Maximize, ArrowLeft } from "lucide-react";
 import { PORTFOLIO } from "@/data/data";
 import { LightBoxNew } from "../gallary/lightBox";
+import ProjectSidebarForm from "../cta/project-sidebar-cta";
 
 export default function ProjectDetailNew({ slug }) {
   const projectData = PORTFOLIO.find(({ link }) => link === slug);
-
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
     // Prevent body scrolling when lightbox is open
     document.body.style.overflow = "hidden";
   };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <nav className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
@@ -61,14 +51,13 @@ export default function ProjectDetailNew({ slug }) {
           </div>
         </div>
       </div>
-
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
         {/* Featured Image */}
         <div className="relative aspect-[16/9] w-full mb-8 rounded-xl overflow-hidden shadow-lg">
           <img
             src={
-              `https://cdc.construction/images/projects/${projectData.images_link}/${projectData.image}` ||
+              `https://cdc.construction/images/projects/${projectData?.images_link}/${projectData?.image}` ||
               "/placeholder.svg"
             }
             alt={projectData?.title}
@@ -96,45 +85,7 @@ export default function ProjectDetailNew({ slug }) {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-md h-fit">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Project Details
-            </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between pb-3 border-b border-gray-100">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <Building className="h-5 w-5 text-red-500" />
-                  Category
-                </div>
-                <div className="font-medium">{projectData?.category}</div>
-              </div>
-              <div className="flex justify-between pb-3 border-b border-gray-100">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <MapPin className="h-5 w-5 text-red-500" />
-                  Location
-                </div>
-                <div className="font-medium">{projectData?.location}</div>
-              </div>
-              <div className="flex justify-between pb-3 border-b border-gray-100">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <Clock className="h-5 w-5 text-red-500" />
-                  Duration
-                </div>
-                <div className="font-medium">
-                  {projectData?.duration || "On-going"}
-                </div>
-              </div>
-              <div className="flex justify-between ">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <Calendar className="h-5 w-5 text-red-500" />
-                  Completion
-                </div>
-                <div className="font-medium">
-                  {projectData?.date || "Running"}
-                </div>
-              </div>
-            </div>
-          </div>
+          <ProjectSidebarForm />
         </div>
 
         {/* Image Gallery */}
@@ -157,16 +108,7 @@ export default function ProjectDetailNew({ slug }) {
             );
           })}
         </div>
-
-        {/* Related Projects */}
-        {/* <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Related Projects
-        </h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {/* Related Projects */}
-        </div>
       </div>
-
       {/* Full-screen Image Viewer */}
       {lightboxOpen && (
         <LightBoxNew

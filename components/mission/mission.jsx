@@ -41,13 +41,18 @@ const MissionSection = () => {
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold">
-                High Quality Co-Living Spaces
+                {/* High Quality Co-Living Spaces */}
+                The Power of Gathering Spaces
               </h3>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Our fully furnished spaces are designed and purpose-built with
+                {/* Our fully furnished spaces are designed and purpose-built with
                 Co-Living in mind, featuring high-end finishes and amenities
-                that go far beyond traditional apartment buildings.
+                that go far beyond traditional apartment buildings. */}
+                Our spaces are designed to foster meaningful connections and
+                community among residents. The public square has been a
+                fundamental part of the urban landscape. CDC aims to capture
+                this spirit of bringing people together in an exciting.
               </p>
             </div>
           </div>
@@ -63,13 +68,19 @@ const MissionSection = () => {
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold">
-                Fostering Vibrant Communities
+                {/* Fostering Vibrant Communities */}
+                Community-Driven Co-Living
               </h3>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Our passion is bringing people together. Beyond creating
+                {/* Our passion is bringing people together. Beyond creating
                 beautiful spaces, we provide shared experiences and foster
-                meaningful connections.
+                meaningful connections. */}
+                We aim to build high-quality Co-Living spaces to foster vibrant
+                communities by bringing people together to build and/or rebuild
+                a simple but all-inclusive facility. Beyond creating beautiful
+                spaces, we provide shared experiences, and foster meaningful
+                connections.
               </p>
             </div>
           </div>
@@ -85,14 +96,20 @@ const MissionSection = () => {
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold">
-                Simple and All-inclusive
+                {/* Simple and All-inclusive */}
+                Building a Better Future
               </h3>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                We worry about the details so that our residents don't have to.
+                {/* We worry about the details so that our residents don't have to.
                 From our online application process to simple, all-inclusive
                 billing we aim to make the living experience as effortless as
-                possible.
+                possible. */}
+                The CDC is to construct a better future via ingenuity,
+                sustainability, and unmatched craftsmanship. We approach every
+                project with the same level of professionalism and dedication,
+                guaranteeing positive results for our clients and the
+                communities they serve.
               </p>
             </div>
           </div>

@@ -14,15 +14,15 @@ export default function CTASection() {
                 Ready to dive in?
               </p>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                Boost your productivity.
-                <br />
-                Start using our app today.
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+                Contact us today and
+                <br /> get a free consultation
               </h2>
 
               <p className="text-white/80 text-lg mb-10 max-w-lg">
-                Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-                Malesuada adipiscing sagittis vel nulla.
+                Our team is here to help you every step of the way. From
+                consultation to implementation, we'll work with you to create a
+                customized solution that meets your unique needs and goals.
               </p>
 
               {/* Horizontal feature list */}
@@ -30,18 +30,22 @@ export default function CTASection() {
                 <div className="flex items-center gap-3">
                   <Check className="h-4 w-4 text-white" />
                   <span className="text-white whitespace-nowrap">
-                    Easy to use
+                    Expert Guidance
                   </span>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Check className="h-4 w-4 text-white" />
-                  <span className="text-white whitespace-nowrap">Fast</span>
+                  <span className="text-white whitespace-nowrap">
+                    Customized Solutions
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Check className="h-4 w-4 text-white" />
-                  <span className="text-white whitespace-nowrap">Secure</span>
+                  <span className="text-white whitespace-nowrap">
+                    Free Quote
+                  </span>
                 </div>
               </div>
 
@@ -67,7 +71,7 @@ export default function CTASection() {
             {/* Right Content - UI Mockups */}
             <div className="relative h-full w-full">
               <img
-                src="https://preline.co/assets/img/demo-previews/img8.webp"
+                src="https://res.cloudinary.com/drcjzx0sw/image/upload/v1744819598/image_12_yrpigt.png"
                 alt="UI Mockups"
                 className="w-5/6 h-96 -bottom-2 right-0  object-cover rounded-tl-xl absolute"
               />

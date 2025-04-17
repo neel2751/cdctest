@@ -13,42 +13,53 @@ export default function TrackRecord() {
           </div>
 
           {/* Content Section */}
-          <div className="flex flex-col justify-center p-6 sm:p-10 lg:p-16 bg-white">
+          <div className="flex flex-col justify-center p-6 sm:p-10 lg:p-14 bg-white">
             <div>
               <p className="text-red-600 font-medium mb-2">Our track record</p>
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-                Trusted by thousands of creators worldwide
+                Your trusted partner for innovative solutions
               </h2>
 
               <p className="text-gray-500 mb-10 text-sm leading-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                We are your trusted partner in construction, delivering
+                innovative solutions and unparalleled craftsmanship from concept
+                to completion. With unwavering professionalism and expertise, we
+                bring your vision to life.
               </p>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-gray-200 pt-8">
                 <div className="border-b sm:border-b-0 sm:border-r border-gray-200 pr-0 sm:pr-8 pb-8 sm:pb-0">
-                  <p className="text-2xl font-medium text-red-600">8,000+</p>
-                  <p className="text-gray-600 text-sm mt-2">
-                    Creators on the platform
-                  </p>
+                  <p className="text-2xl font-medium text-red-600">102+</p>
+                  <p className="text-gray-600 mt-2">Projects completed</p>
                 </div>
 
                 <div className="pb-8 sm:pb-0">
-                  <p className="text-2xl font-medium text-red-600">3%</p>
-                  <p className="text-gray-600 mt-1">Flat platform fee</p>
+                  <p className="text-2xl font-medium text-red-600">100+</p>
+                  <p className="text-gray-600 mt-1">reliable Contractors</p>
                 </div>
 
                 <div className="border-t sm:border-t-0  sm:border-b-0 sm:border-r border-gray-200 pr-0 sm:pr-8 pt-8 sm:pt-0 pb-8 sm:pb-0">
-                  <p className="text-2xl font-medium text-red-600">99.9%</p>
-                  <p className="text-gray-600 mt-1">Uptime guarantee</p>
+                  <p className="text-2xl font-medium text-red-600">18+</p>
+                  <p className="text-gray-600 mt-1">Project & Site Managers</p>
                 </div>
 
                 <div className="border-t sm:border-t-0 pt-8 sm:pt-0">
-                  <p className="text-2xl font-medium text-red-600">$70M</p>
-                  <p className="text-gray-600 mt-1">Paid out to creators</p>
+                  <p className="text-2xl font-medium text-red-600">7</p>
+                  <p className="text-gray-600 mt-1">Architectural Designer</p>
+                </div>
+
+                <div className="border-t sm:border-t-0  sm:border-b-0 sm:border-r border-gray-200 pr-0 sm:pr-8 pt-8 sm:pt-0 pb-8 sm:pb-0">
+                  <p className="text-2xl font-medium text-red-600">2018</p>
+                  <p className="text-gray-600 mt-1"> Year of establishment</p>
+                </div>
+
+                <div className="border-t sm:border-t-0 pt-8 sm:pt-0">
+                  <p className="text-2xl font-medium text-red-600">30+</p>
+                  <p className="text-gray-600 mt-1">
+                    Year of industry experience
+                  </p>
                 </div>
               </div>
             </div>

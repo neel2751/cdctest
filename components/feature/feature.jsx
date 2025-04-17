@@ -27,7 +27,7 @@ const Features = () => {
     {
       icon: ShieldCheck,
 
-      title: "£10M Insurance Coverage",
+      title: "Up to £10 Million Insurance",
 
       category: "Protection",
 
@@ -49,7 +49,7 @@ const Features = () => {
     {
       icon: BadgeCheck,
 
-      title: "10-Year Warranty",
+      title: "Up to 10-Year Structural Warranty",
 
       category: "Quality",
 
@@ -71,7 +71,7 @@ const Features = () => {
     {
       icon: ThumbsUp,
 
-      title: "Client Satisfaction",
+      title: "After care and Maintenance Support",
 
       category: "Service",
 
@@ -136,7 +136,7 @@ const FeatureCard = ({ title, description, icon: Icon, category, index }) => (
 
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-lg font-semibold leading-tight text-gray-900 sm:text-xl">
+            <h3 className="text-base font-semibold leading-tight text-gray-900 sm:text-lg">
               {title}
             </h3>
 

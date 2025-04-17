@@ -1,20 +1,16 @@
 "use client";
-import { FOOTERBLOCKS, FOOTERLINKS, LOGOS, services } from "@/data/data";
-import {
-  ArrowRight,
-  CheckCircle,
-  Clock,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Youtube,
-} from "lucide-react";
+import { FOOTERLINKS, LOGOS, navigation, services } from "@/data/data";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Input } from "../ui/input";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TikTokIcon,
+  YouTubeIcon,
+} from "@/data/icon";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -90,21 +86,13 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3">
-              {[
-                "Home",
-                "About Us",
-                "Our Projects",
-                "Meet the Team",
-                "Careers",
-                "Contact",
-                "Sitemap",
-              ].map((item) => (
-                <li key={item} className="group">
+              {navigation.map((item) => (
+                <li key={item?.title} className="group">
                   <Link
-                    href={`/${item.toLowerCase().replace(" ", "-")}`}
+                    href={item?.href}
                     className="inline-flex items-center text-sm text-gray-600 transition-colors duration-200 hover:border-b hover:border-red-600 hover:text-red-600"
                   >
-                    {item}
+                    {item.title}
                   </Link>
                 </li>
               ))}
@@ -158,7 +146,7 @@ const Footer = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center space-x-2"
+                    className="w-full bg-red-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-800 transition-colors duration-200 flex items-center justify-center space-x-2"
                   >
                     <span>Subscribe</span>
 
@@ -204,7 +192,7 @@ const Footer = () => {
                   <Link
                     href={item.toLowerCase()}
                     key={item}
-                    className="text-neutral-600 hover:text-neutral-800 transition-colors duration-300"
+                    className="text-neutral-600 hover:text-red-800 hover:font-medium transition-colors duration-300"
                   >
                     {item}
                   </Link>
@@ -223,20 +211,33 @@ const Footer = () => {
 
             <div className="flex space-x-4">
               {[
-                { icon: Facebook, href: "#" },
-
-                { icon: Instagram, href: "#" },
-
-                { icon: Youtube, href: "#" },
-
-                { icon: Linkedin, href: "#" },
+                {
+                  icon: <FacebookIcon />,
+                  href: "https://www.facebook.com/cdcconstructionltd",
+                },
+                {
+                  icon: <InstagramIcon />,
+                  href: "https://instagram.com/cdc.constructionuk",
+                },
+                {
+                  icon: <YouTubeIcon />,
+                  href: "https://www.youtube.com/@CDCLtd",
+                },
+                {
+                  icon: <LinkedInIcon />,
+                  href: "https://www.linkedin.com/company/creative-design-and-construction-limited/",
+                },
+                {
+                  icon: <TikTokIcon />,
+                  href: "https://www.tiktok.com/@cdclimited",
+                },
               ].map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 text-gray-600 hover:bg-gray-900 hover:text-white transition-all duration-200"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 text-gray-800 hover:bg-red-600 hover:text-white transition-all duration-200 p-1"
                 >
-                  <social.icon className="h-4 w-4" />
+                  {social.icon}
                 </a>
               ))}
             </div>

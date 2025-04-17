@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { services } from "@/data/data";
+import FAQSection from "@/components/faqs/faq";
 
 const ServiceDetails = ({ slug }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -118,21 +119,10 @@ animate-pulse-slow"
       <div className="py-20 bg-white relative overflow-hidden">
         {/* Animated Background Elements */}
 
-        <div
-          className="absolute top-40 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl -z-10 opacity-60
-
-animate-pulse-slow"
-        />
-
-        <div
-          className="absolute bottom-40 left-0 w-96 h-96 bg-gray-50 rounded-full blur-3xl -z-10 opacity-60
-
-animate-pulse-slow"
-        />
-
+        <div className="absolute top-40 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl -z-10 opacity-60 animate-pulse-slow" />
+        <div className="absolute bottom-40 left-0 w-96 h-96 bg-gray-50 rounded-full blur-3xl -z-10 opacity-60 animate-pulse-slow" />
         <div className="container mx-auto px-6">
           {/* Section 1 */}
-
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
             <div className="space-y-6 animate-fade-in-up">
               <div className="inline-flex items-center gap-2 bg-black/5 px-4 py-2 rounded-full mb-4">
@@ -254,6 +244,7 @@ animate-pulse-slow"
           </div>
         </div>
       </div>
+      <FAQSection faqItems={service?.FAQs} />
     </>
   );
 };

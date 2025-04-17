@@ -1,13 +1,35 @@
 import {
   ArrowRight,
+  Box,
+  Brush,
+  Building,
   Building2,
+  ClipboardCheck,
+  Clock,
   Clock9,
+  FileCheck,
+  LayoutDashboard,
+  Leaf,
   Lightbulb,
   Mail,
   MapPinCheck,
+  Maximize2,
+  Pencil,
+  PenTool,
+  Phone,
   PhoneCall,
+  Rocket,
+  Ruler,
+  ScrollText,
+  Shield,
   ShieldCheck,
+  Sun,
+  TrendingUp,
   UserCircle2,
+  Users,
+  Wallet,
+  Wrench,
+  Home,
 } from "lucide-react";
 
 export const services = [
@@ -47,6 +69,50 @@ export const services = [
         },
       ],
     },
+    FAQs: [
+      {
+        question:
+          "Why should I choose CDC Constructions for architectural design in London?",
+
+        answer:
+          "The combination of numerous years of experience, contemporary design approaches, and dedication to sustainable practices allows us to achieve great results that meet your expectation.",
+
+        icon: Building2,
+      },
+      {
+        question:
+          "What is the duration of the architectural design development?",
+
+        answer:
+          "The design timelines differ based on the depth of the project. The initial design stage takes 6-12 weeks on average. However, more complex projects could take more time.",
+
+        icon: Clock,
+      },
+      {
+        question: "Are you able to assist with London planning permissions?",
+
+        answer:
+          "Certainly! We take care of planning permissions as we ensure your project meets local requirements and help it move smoothly.",
+
+        icon: FileCheck,
+      },
+      {
+        question: "Do you provide sustainable design services?",
+
+        answer:
+          "Yes! We take pride in saying that sustainability remains our core value. Our company has crafted designs that are environmentally sustainable and energy efficient.",
+
+        icon: Leaf,
+      },
+      {
+        question: "How can I begin my project with CDC Constructions?",
+
+        answer:
+          "It's simple! We recommend reaching out to us so that we can book your initial consultation and from there, we will take you through the entire process.",
+
+        icon: Phone,
+      },
+    ],
   },
 
   {
@@ -85,6 +151,38 @@ export const services = [
         },
       ],
     },
+    FAQs: [
+      {
+        question: "What is the design process like at CDC Construction?",
+        answer:
+          "The design process begins with a site survey at CDC Construction which is timed according to your convenience. Our RIBA registered architect will personally visit your site and talk about your objectives for the project. Afterward, our design team progresses and prepares initaly drafts which consist of floor plans, elevations, and 3D views. You are given the opportunity to revise all drafts until you are completely satisfied before we submit the planning application.",
+        icon: Pencil,
+      },
+      {
+        question: "How long does the design phase take?",
+        answer:
+          "The design phase, in general, lasts for a maximum of up to 7 business days. Our team will engage directly with you within this timeframe to design the most optimal layout from the feedback received. We are open to changes and we will provide 3D representations together with renders of the visuals so you can see the design before moving into the planning application stage.",
+        icon: Clock,
+      },
+      {
+        question: "What does the pre-build stage entails?",
+        answer:
+          "The pre-build stage includes: obtaining a detailed quotation based on your design, addressing party wall agreements, and finalizing the project schedule. Construction progress is planned with the approved design, and we formulate a construction schedule for delivery of critical items such as the kitchen and glazing.",
+        icon: ClipboardCheck,
+      },
+      {
+        question: "How does CDC Construction ensure quality during the build?",
+        answer:
+          "Quality is maintained by CDC Construction at the highest level throughout the building process by conducting regular checks by management. For expeditious project completion, an in-house team of over 20 qualified professionals is dedicated to the project. You are also kept updated with progress through bi-weekly reports, and our project manager is available for onsite consultations.",
+        icon: Shield,
+      },
+      {
+        question: "Am I responsible for the planning application?",
+        answer:
+          "No, CDC Construction will handle the entire planning application process for you. The planning application for permission or permitted development is drafted and submitted along with all council communication during the decision period which lasts a maximum of eight weeks.",
+        icon: FileCheck,
+      },
+    ],
   },
 
   {
@@ -97,6 +195,63 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/Loft.webp",
     href: "loft-conversion",
     icon: "https://cdc.construction/images/services/icon/Loft.svg",
+    details: {
+      title: "Transform your loft space into a Stylish and Functional",
+      description:
+        "Do you want to raise the value of your property even more? At CDC Construction, our emphasis is on making high loft conversions, giving the spaces in the roof a new sophisticated, practical and wealth-enhancing aspect. If you need an additional bedroom, a study room or a cozy room, it’s time to get in touch with our specialists who will guide you through all the possibilities. We’re based in London but work with clients all over the UK, and our loft conversions are tailored to fit your requirements, tastes and budget. Rest assured that with our knowledge and expertise the best quality will be guaranteed in each project completed, as we combine design, workmanship and management.",
+      data: [
+        {
+          title: "Bespoke Designs Tailored to Your Needs",
+          description:
+            "If you want to know how you might be able to complete your loft conversion, ask our team as we have successfully completed countless projects revolving that target. Our team covers project from the smallest attic remodels to extendable multi-room modifications. As plenty of time has been able to cover these measures, all members of our construction can perform specific tasks they are assigned to. Every house is different, and it is only right that your loft conversion also accommodates your preferences and needs. Whether you are thinking of a compact guest room, a very nice studio, or even an expansive master bedroom suite, we will help you to create a loft conversion plan that corresponds to your lifestyle",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Comprehensive Loft Conversion Services",
+          description:
+            "We offer a loft conversions, one-stop-shop service, overseeing the complete conversion process from start to finish. Such include: • First meeting and feasibility study. • Loft plans with beautiful designs and drawings. • Obtaining planning permission and building regulations approval when necessary. • Professional construction and management practices. • Final decoration and finishing work. At CDC Construction, you are assured of stressing nothing as our team puts the project in safe and professional hands. Being located in London, removes some of the guess work when it comes to operating in various parts of the UK. There are many ways to dealing with such local challenges as planning or doing design work, because many factors always stay the same or are common in nature so we know how to deal with them effectively.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Our Loft Conversion Process",
+          description:
+            "We start off through a detailed consultation to listen to your ideas, requirements and budget. Our staff will also assess the site in order to estimate the possibilities of your loft space, as well as look for possible challenges. We are loft specialists! Our talented construction team will methodically finish the loft conversion. Notable tasks within this particular phase include: • Loft structure works to be safe and building regulations in the UK. • Window, insulation and floor installation. • Undertaking electrical and plumbing works for lights, heating and showers if need be. • Finishing touches to give that final look to space.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question: "What is a loft conversion?",
+        answer:
+          "It is a type of work carried out on the property which involves changing an attic or loft that is not utilized into a working space which can be a bedroom, office, or a lounging area. It is an efficient way of increasing your property's square footage as well as its value without the time and financial strain that comes with house extensions.",
+        icon: Home,
+      },
+      {
+        question: "Do I need planning permission for a loft conversion?",
+        answer:
+          "Loft conversions in the UK almost always seek planning permissions from the local council although some may come under permitted development rights. It is best to speak with CDC Construction to ensure your conversion meets local regulations and complies with the law so that no legal problems arise in the area.",
+        icon: ScrollText,
+      },
+      {
+        question: "Will a loft conversion add value to my property?",
+        answer:
+          "Absolutely, a loft conversion could help you gain greater value for your house when selling. The clients to appropriate ceilings with space attics really love properties that allow for additional floors in turns achieved through casual renovations. They practically serve the importance goals of increased demanding and supply, thus with the completion of school house their house term plans will be instant.",
+        icon: TrendingUp,
+      },
+      {
+        question: "How can a loft conversion increase the space in my home?",
+        answer:
+          "It allows ceiling rooms to unlock new enhancements that have been previously unused to appear as a new sweet room, office or even lush lounge, which makes you a proud owner of easy living spaces circumventing fees incurred via extensions.",
+        icon: Maximize2,
+      },
+      {
+        question: "What are the lifestyle benefits of a loft conversion?",
+        answer:
+          "Apart from increasing space, a loft conversion improves your lifestyle by providing more privacy, flexibility, and comfort. A tranquil home office or sunlit sitting room can serve as a refuge, improving your living conditions, courtesy of a loft conversion.",
+        icon: Sun,
+      },
+    ],
   },
 
   {
@@ -110,6 +265,65 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/Reno.webp",
     href: "renovation-and-refurbishment",
     icon: "https://cdc.construction/images/services/icon/Reno.svg",
+    details: {
+      title: "Revitalize Your Space with Renovations",
+      description:
+        "With CDC Construction as your partner, homes and commercial properties can undergo a complete renovation since we specialize in renovations of buildings and properties. Our team of experts holds great experience and is happy to help you with any space, whether you're looking to modernize it, restore it to its old form, or change it completely. \n Based in London, we cater to clients all over the UK and we are experts in stylish and high quality renovations. We make sure that each and every renovation be it just a single room or an apartment, a property or a group of properties, is done with great perfection and detailing and is overseen carefully from the beginning to the end. Please allow us to rejuvenate your room which would make it ideal for you and your way of life.",
+      data: [
+        {
+          title: "Tailored Solutions & Quality Craftsmanship",
+          description:
+            "With many years of working on construction and renovation activities in different capacities, we have worked on a fair number of projects including modern makeover of houses and turning properties back into their original historic state. Every customer is different and we ensure their renovations are done to their satisfaction using their own unique style and preferences within the constraints of their budget. We offer a comprehensive service from design and planning to construction and finishing touches to ensure the customer has a quick and stress free experience throughout the renovation. Each final work is of good quality and lasting since we provide the right materials required to perform the work and the work is well done and meets quality standards. We offer a comprehensive service from design and planning to construction and finishing touches to ensure the customer has a quick and stress free experience throughout the renovation.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Our Renovation Services",
+          description:
+            "At CDC Construction, we customize renovations that fulfill the requirements of our clients. Our comprehensive professionals can handle any project with ease and provide you with: • Home Renovations: Stylish and functional tweaks can modify your living area. • Kitchen Renovations: Dreams can turn into reality as the most updated and practical designs breathe life into your spaces. • Bathroom Renovations: Turn your bathroom into a glamorous, relaxing getaway. • Period Property Restorations: Focus on conserving the historic properties charm whilst ensuring they’re functional. • Commercial Renovations: Make your workplace more functional with specialized business upgrades. The Benefits of Renovating Your Property • Modernize Your Space: Replace old-fashioned interiors with stylish ones. • Energy Efficiency: Install necessary fixtures to save on energy costs as well as help the environment.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Serving London and the United Kingdom",
+          description:
+            "CDC Construction is your partner of choice if you are a homeowner or running a business and are based in London or anywhere else in the United Kingdom. Flat renovation? Townhouse buckle? Commercial Property’s getting overhauled? We have you covered. Get in Touch with CDC Construction Are you ready to start over and need a team specialist in renovation services? CDC Construction is the solution. They happen to be one of the best providers of renovation services in the United Kingdom as well as in London. Let CDC Construction turn your house into the home that you have always wanted. Give us a call today and schedule a consultation!",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question: "What does a home renovation by CDC Construction involve?",
+        answer:
+          "A home renovation through CDC Construction begins with an Initial Consultation which is followed by Custom Design. The client is at the center of the experience, which combines their home with their lifestyle seamlessly. We ensure that your home not only matches your personal style, but also improves comfort and value through our meticulous craftmanship.",
+        icon: Home,
+      },
+      {
+        question: "How does CDC Construction customize the renovation design?",
+        answer:
+          "Our team learns your preferences during inclusive consultations. Based on your vision, they select the ideal color scheme, layout, textures, and even furniture, if desired. Each design is tailored for the client's look, preferences, and usage patterns alongside functional requirements.",
+        icon: Brush,
+      },
+      {
+        question: "Who manages the renovation project at CDC Construction?",
+        answer:
+          "The project is handled by our capable project management team, who ensure clear strategies and goals help achieve your desired results. Apart from scheduling and coordinating the trades, materials and timelines are tracked too, so every procedure is effortless. Effective communication at each process boosts client confidence.",
+        icon: Users,
+      },
+      {
+        question:
+          "How does the craftsmanship of CDC Construction stand out for renovation works?",
+        answer:
+          "We take pride in providing premium-quality craftsmanship, skilled tradespeople, and using only the best materials. Custom cabinetry, flooring, and general structural work are all handled at the painstaking level of detail. Our standard is excellence—and it shows in the end result.",
+        icon: Wrench,
+      },
+      {
+        question:
+          "In what manner do I initiate my renovation work with CDC Construction?",
+        answer:
+          "Starting out is simple. All that is required is to reach out to CDC Construction to book a consultation. We'll take note of your concepts, analyze the layout of your space, and offer professional insights. We guarantee you an inspiring renovation journey from concept to completion. It will most certainly feel like this journey was made just for you.",
+        icon: Phone,
+      },
+    ],
   },
 
   {
@@ -123,6 +337,67 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/NewBuild.webp",
     href: "new-build",
     icon: "https://cdc.construction/images/services/icon/NewBuild.svg",
+    details: {
+      title: "Transform your loft space into a Stylish and Functional",
+      description:
+        "Are you considering constructing your ideal and custom home or an investment property? If yes, CDC Construction can help in realising your dreams as they have proven experience in providing quality new build construction services throughout London and UK encompassing your ideas. If you want to build design an extravagant family residence, contemporary smash or several units, our skilled specialists can help you everywhere and exactly where you require it. Building a new residence is not only one of life’s defining moments, it is also considered to be one of the most interesting endeavors anyone can take on. By using CDC Construction, you will benefit from our knowledge, creativity and willingness to complete projects on time, within budget and to any quality standards required. The construction of new homes combines innovative designs with precision construction work to produce homes that are attractive, practical and durable.",
+      data: [
+        {
+          title: "Custom-Made To Suit You.",
+          description:
+            "Each new construction project has its own set of requirements and characteristics and so do we see it. Our specialists taking into account the aforementioned objectives, your personal preferences and way of life work with you so that you could get the result that was directed by you specifically. We will achieve the designer elements you want, whether it's a modern style home, a classic one, or a custom creation that hasn't been there yet. With retrained Hands-On experience in the construction sector, we particularly carried out quite a number of new build projects which range from single family houses to large scale facilities. Our members are also familiar with building from scratch since most of them are able to construct large and smaller size and various types of projects.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "High-Quality Craftsmanship",
+          description:
+            "We guarantee that we will make the best homes for you. We put in premium materials, modern construction practices, and skilled crafts on all our projects to ensure that your new build is sturdy, energy-efficient, and beautiful. Having Construction Company London permits us to be well versed with the local market, planning regulations and building regulations. No matter whether you are constructing in a busy city, suburbia or countryside, we will ensure that your construction is up to every legal and technical requirement which exists.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "The Benefits of Building a New Home in London and the UK",
+          description:
+            "With a new build comes the ability to craft every component of your new home by hand including the layout, materials, fixtures, and finishes. Creating a home tailored to your way of life, preferences or future endeavors is possible. New construction homes and buildings are designed with energy-efficient perspectives. Things like advanced insulation, double glazing, energy-efficient appliances, and renewable energy systems will definitely help lower up your utility bills and at the same time contribute less to the environment. A new build would not have the problems of maintaining because of the costs of depreciation an old property would have. Everything from the plumbing to the roof and the foundation is all brand new which saves you money in repairs and also helps in giving you peace of mind.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question:
+          "What sets CDC Construction's New Build service apart from the competition?",
+        answer:
+          "CDC Construction provides a singular comprehensive service regarding New Build projects where design and construction are done in-house. Every single step of the project, design and construction included, is done in-house by specialists to ensure creativity, precision, and seamless craftsmanship. The Draw and Build method guarantees efficient planning, high-quality finishes, and everything is coordinated through one central contact.",
+        icon: Building,
+      },
+      {
+        question:
+          "Why is it necessary to conduct a site survey and do a feasibility study before executing a New Build project?",
+        answer:
+          "A site survey and feasibility study is essential because it evaluates the plausibility and measurements of the property. This equips our architectural team with all the necessary elements to determine the best design solutions based on the site's conditions. This approach ensures that your project receives expert guidance prior to starting any work so that it's set up for success.",
+        icon: Ruler,
+      },
+      {
+        question:
+          "What are concept design drawings, and why are they important?",
+        answer:
+          "They are the first designs produced through collaboration between you and the architect which designed logos and are known as concept design drawings. These drawings focus on the most critical factors which include space, function, and budget. Concept design drawings ensure that both the client and architects are on the same page regarding project goals, which is why they are important.",
+        icon: PenTool,
+      },
+      {
+        question:
+          "In what ways does 3D modeling improves a New Build design project?",
+        answer:
+          'With 3D modeling, you can interactively and realistically view your New Build project. Unlike 2D plans, 3D models are easier to understand regarding design, layout, and flow. Even our virtual walkthroughs, which can include movement, enhance your experience of fully "stepping" into the design before construction begins.',
+        icon: Box,
+      },
+      {
+        question: "How do I start my New Build project with CDC Construction?",
+        answer:
+          "The commencement of your New Build project with CDC Construction is straightforward. All that is required of you is to reach out to us in order to schedule a site survey and viability study. We will examine your site and have a conversation regarding your concepts so that we can offer tailored advice on how they can best be accomplished. After this, we will be with you in every step of the design and construction process.",
+        icon: Rocket,
+      },
+    ],
   },
 
   {
@@ -136,6 +411,65 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/Extension.webp",
     href: "extension",
     icon: "https://cdc.construction/images/services/icon/Exte.svg",
+    details: {
+      title: "Transform your loft space into a Stylish and Functional",
+      description:
+        "Do you want to raise the value of your property even more? At CDC Construction, our emphasis is on making high loft conversions, giving the spaces in the roof a new sophisticated, practical and wealth-enhancing aspect. If you need an additional bedroom, a study room or a cozy room, it’s time to get in touch with our specialists who will guide you through all the possibilities. We’re based in London but work with clients all over the UK, and our loft conversions are tailored to fit your requirements, tastes and budget. Rest assured that with our knowledge and expertise the best quality will be guaranteed in each project completed, as we combine design, workmanship and management.",
+      data: [
+        {
+          title: "Design Stage and Planning",
+          description:
+            "<span class='font-medium text-gray-900'>Site Survey</span> Each of our building works begins after the site visit is carried out by one of our RIBA architects. During this meeting, we will see your building, understand your requirements, and also take measurements to come up with a fitting strategy. We coordinate site surveys at the times which are most suitable for you, so there is no pressure of time. <span class='font-medium text-gray-900'>Preliminary Designs</span> As soon as the survey report is out our design team commences work on your draft designs which include proposed floor plans, elevations and layouts that are currently in use. This stage will typically last for about 7 working days. It is advisable for you to give us your comments as well as request for alterations whether or not you are satisfied, as further progress will not be made until you are satisfied. Your designs will be made to your needs since the whole reason we came up with this in the first place is because you wanted to be happy and satisfied with the results. To enhance this process further, we also have 3D models which for an easier visualization of the final work. This advancement makes the decision-making process easier and ensures that the final design is in line with one's requirements.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Planning Applications",
+          description:
+            "Pre-Build Stage After the plans have been completed and planning permission granted, we enter the pre-build stage. This phase is all preparation and making sure that everything is ready for the construction phase. Detailed Quotation Our estimators will prepare a detailed quotation based on your designs and specifications. This includes a comprehensive schedule of works which allows you to see what’s included within it. Together with you, we will go through and adjust the quote so that it meets your expectations budget-wise and otherwise. Party Wall Agreements If work to be effected is near the shared boundary, a party wall agreement may be necessary. We can recommend trusted surveyors to assist with this process. We recommend you to speak to your neighbors about your plans early on in the process in order to avoid delays. Project Schedule One of the most important aspects for a build to be successful is it to have a detailed project schedule. When the quotation is accepted, we will be able to complete a timetabled plan which shows key milestones such as planned delivery of major items, kitchens and glazing, as well as the project completion date. This guarantees everything is done appropriately and on time. Agreement and Payment We will make sure that beforehand both you as the client and us as the contractor have a formal agreement or a contract which serves as protection to both parties once the construction work is ready to commence. This contract complies with the industry norms and captures all the necessary details agreed upon. To reserve the start date for our construction team, a deposit of 5% will be required.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "3. The Build Process",
+          description:
+            "Pre Construction Meeting You’ll construct a meeting with our project and construction manager before you kick off this construction. This would be your chance to raise concerns that you feel will need clarification during the process. Maintaining Standards Building activities completed by each of the members of our construction group are each maintained to the highest standard. We will provide the right type of materials and skills which we believe will be’ future proof’. Supervision by members of management is also a part of the regular activities. Dedicated Project Managers Your project manager can do the meet and greet with you at site, whenever required. Additionally, every two weeks we provide important information through progress reports, and confirmed details of actions and events. The focus of this is to reduce stress through the process and provide a product that is easily able to impress clients.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question: "What is a home extension?",
+        answer:
+          "A home extension is a project construction that seeks to increase the size of an existing property by adding extra living space. This includes construction of new rooms, expanding your kitchen, enlarging a living area, or adding another floor to a home. CDC Construction customizes home extensions to improve the use and value of the home.",
+        icon: Home,
+      },
+      {
+        question:
+          "Why should I book a site survey and feasibility study before starting a home extension?",
+        answer:
+          "Booking a Site Survey and Feasibility Study checks that your extension can practically be built and that it integrates well with other structures in your property. You will be assisted by the architectural design team where they will examine the area, schematically plan it together with you and provide comprehensive design solutions to avoid surprises in the process.",
+        icon: ClipboardCheck,
+      },
+      {
+        question: "What are concept design drawings?",
+        answer:
+          "These are the first drawings which incorporate all the aspects discussed with the architect and include a creative depiction of whatever extension was verbally discussed among you and the architect. The designs are made based on space, function, layout and budget so the plan guarantees that both you and the architect share the same vision for your project before proceeding with other complex architectural works.",
+        icon: PenTool,
+      },
+      {
+        question:
+          "What is an architectural 3D model, and how does it aid in the extension process?",
+        answer:
+          "An architectural 3D model allows users to vividly interact with the design of their home extension, far surpassing the experiences offered by 2D drawings. It assists in visualizing the actual construction by enabling virtual walkthroughs, ensuring that users are satisfied with the design before construction begins.",
+        icon: Box,
+      },
+      {
+        question: "How much does a home extension cost?",
+        answer:
+          "A home extension's price is determined by the scale of work, materials, and design complexity. CDC Construction offers fair rates and detailed estimates after property assessment and project consultations. We guarantee that your extension will be built within your budget while ensuring your investment receives optimal value.",
+        icon: Wallet,
+      },
+    ],
   },
 
   {
@@ -147,6 +481,64 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/Basement.webp",
     href: "basement-conversion",
     icon: "https://cdc.construction/images/services/icon/Base.svg",
+    details: {
+      title: "Basement Conversions in London and Across the United Kingdom",
+      description:
+        "The basement has a lot of potential especially if you use the services of CDC Construction, who are the specialists in basement conversions in London and all over the UK. No matter whether it’s a sleek self contained office, a beautiful recreation room or an additional bedroom the professional construction team is ready to convert your basement into more functional and elegant space according to your requirements. Who says a basement is just an underground cold storage? At Creative Design and Construction, we are experts in high-class basement conversion services that are aimed to improve your rooms and your property as a whole. The structures are compliant with UK building regulations. Being in the construction industry for so long CDC Construction perfectly understands how a project is to be delivered right from the planning stage to the building stage and paying attention to details.",
+      data: [
+        {
+          title: "Sustainable and Stylish Basement Designs",
+          description:
+            "At CDC Construction Ltd we believe that a basement should be slim, stylish and functional all at the same time. Our ideology focuses on creating an efficient basement design that integrates sustainable solutions and environment-friendly practices that not only enhances the productivity of the basement but also its lifetime. When seeking to maximize the potential of your home without relocating, One of the cheapest and best methods is converting your basement. This is where we, at CDC Construction, come in. We help you design and convert a basemen which best suited your needs and is functional and stylish.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Expert Basement Conversions in London and Across the UK",
+          description:
+            "1. Consultation & Planning When you engage with us, we sit you down in order to understand your vision clearly. That allows us to block out all the other possibilities and strategies thus allowing us to become closer to your goals while meeting all your needs 2. Custom Design Once the planning and consultation is done, our cloistered designers will begin crafting specialized designs that maximize basement light, space and usage. 3. Construction & Finishing After the final design has been approved by you, we will commence the construction phase where we will use high class materials along with expert craftsmanship to bring your vision to life every step of the way till the final stage. This process can be used all over London. Regardless of location, we will always offer the highest level of service to ensure your vision becomes a reality.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Sustainable and Stylish Basement Designs",
+          description:
+            "At CDC Construction Ltd we believe that a basement should be slim, stylish and functional all at the same time. Our ideology focuses on creating an efficient basement design that integrates sustainable solutions and environment-friendly practices that not only enhances the productivity of the basement but also its lifetime. • Eco-friendly Materials We make it a point to use materials that are eco-friendly and sustainable whenever we can so as to mitigate the carbon footprint of your project as much as possible. • Energy Efficiency Using advanced insulation techniques and efficient lighting systems are just a few of the various solutions we apply to cut down energy usage and thereby reduce your operating costs. • Durability Our attention to detail and craftsmanship ensures that the beauty of the basement does not deteriorate with time.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question:
+          "What kinds of spaces can I create with my basement conversion?",
+        answer:
+          "As far as basement conversions are concerned, the possibilities are endless. An office, stylish entertainment area, extra bedroom, or even a gym or playroom. At CDC Construction, we work hand-in-hand with you to design a space that captures your vision while also ensuring the area functions properly and is beautiful.",
+        icon: LayoutDashboard,
+      },
+      {
+        question: "What is the estimated timeline for a basement conversion?",
+        answer:
+          "The timeline for a basement conversion is determined by the scope of work needed for the project. Based off our data, we estimate a full basement conversion within the range of 8-12 weeks, assuming there is no more than average design specifications and materials. You will receive a project timeline from us at the kickoff meeting so there are no confusions between what you expect and what we are giving you.",
+        icon: Clock,
+      },
+      {
+        question: "Do I need planning permissions for basement conversion?",
+        answer:
+          "Usually, people do not need planning permissions for a basement conversion unless the scope of work crosses the boundaries of the property. Most times, base planning is sufficient. For CDC Construction, we walk alongside our clients with all approvals and plan the project without needing to worry about the red tape of permissions.",
+        icon: FileCheck,
+      },
+      {
+        question: "Is a basement conversion environmentally friendly?",
+        answer:
+          "Certainly! At CDC Construction, we focus on energy-saving methods and environmentally responsible practices for every basement conversion that we undertake. Our precision cutting techniques enable quality materials to be used in further insulation and illumination of the basement, as well as in the ventilation systems. Other measures including the use of style friendly, energy efficient materials and designs on your new basement aid in making your basement eco-friendly.",
+        icon: Leaf,
+      },
+      {
+        question: "What is the price of a basement conversion?",
+        answer:
+          "The budget for a basement conversion can change based on different factors. These factors can include the room size, design complexity, and materials. In CDC Construction, we are very open and provide all clients with a comprehensive estimate after putting together what needs you have so that comes within their limits regarding budget, aesthetics, and functionality.",
+        icon: Wallet,
+      },
+    ],
   },
 
   {
@@ -162,6 +554,66 @@ export const services = [
     imageUrl: "https://cdc.construction/images/services/Comm.webp",
     href: "commercial-fit-out",
     icon: "https://cdc.construction/images/services/icon/Comm.svg",
+    details: {
+      title:
+        "Innovative Designs to Elevate Your Business Environment Gracefully",
+      description:
+        "At CDC Construction, we like to go the extra mile with design, especially in commercial fit out projects. We believe fit outs, designing of space and branding are essential for any organization. Be it culture, purpose, vision or mission of any organization, the workplace is a direct representation of all these attributes and values. With proper fit outs and relevant branding, your workplace becomes a center of inspiration and immense productivity. Based in London, we know the United Kingdom market really well, which helps us come up with the best designs suitable for your organization across the UK. We also understand the significance of getting all relevant tasks done on time, with the great interior design that perfectly fulfills your requirements. From retail stores to hospitality venues and creating new or redesigning old commercial offices, at CDC Construction, we are here to fulfill all your commercial interior fit out needs.",
+      data: [
+        {
+          title: "Innovative Designs & Solutions",
+          description:
+            "Designers and architects of our firm create forms of space that are contemporary, practical and visually appealing. We take the necessary measures to be not only relevant but ahead of competition which allows us to develop designs that shall improve the business atmosphere beyond compare. We appreciate every business has its own requirements. This is the purpose why we are providing tailor made fit-out solutions that suits your Tenant’s fit-out requirements, preference, and financial resources. From schematic design to interior design ,we customize your space as you wanted it to be. One of the simplest ways to improve the aesthetics and functionality of the facility is by commissioning a professional commercial fitout. Here, at CDC Construction, we are glad to assist businesses in London and the UK to “fit-out” which helps them achieve their business objectives.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Expertise Across Industries",
+          description:
+            "Having done projects in the commercial fit-out industry for long, CDC Construction team have managed to undertake projects for the following industries: ‘Offices’ – Corporate signages and displays. – Branches and corporate offices. • Shop spaces & Showrooms. • Eating establishments such as restaurants, cafes, and other food-related businesses. • Multinational healthcare establishments. • Schools and Colleges. At CDC Construction, we provide all commercial fit-out services under one roof right from the initial meeting to the final handshake. We supervise all processes in the chain, such as: • Interior space configuration and design. • Building and assembly. • Electrical, plumbing, and heating ventilation systems. • Furnishings, and other accessories (FF&E). • Other cosmetic processes.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+        {
+          title: "Our Commercial Projects Fit-Out Solutions",
+          description:
+            "1. Office Fit-Outs Effort plays an important role in completing varied tasks. So, regardless of whether you are building a compact, closed executive suite or a spacious, open-layout collaborative area, we will ease the expectation of how an office is envisioned and built. 2. Retail Fit-Outs Ensure a captivating retail environment that will stimulate purchases. We specialize in creating retail spaces that enhance various stores - from a small boutique to a big showroom. 3. Hospitality Fit-Outs Impressing a customer’s perception in regard to a restaurant, cafe, or a hotel is vital. Thus, we will ensure we construct a place that will contribute greatly to elevating their competition while enhancing the customer experience. 4. Healthcare Fit-Outs  Construct convenient and compliant healthcare facilities which enable patients to be comfortable. We will design and offer ready-made fit-out solutions for clinics, dental practices, education centers, and various medical types of spaces. 5. Educational Fit-Outs Engaging and effective spaces for construction should engage and be effective for school students, college students, trainees in both colleges and dedicated training centers. Spaces should be created which not only impress the students but also make the educators’ work easier.",
+          image: "https://cdc.construction/images/services/Arch.webp",
+        },
+      ],
+    },
+    FAQs: [
+      {
+        question: "What is a commercial fit-out?",
+        answer:
+          "A commercial fit-out refers to the process of changing a vacant or an old commercial space into a usable and appealing place that meets your business requirements. At CDC Construction, we develop innovative solutions designed to strengthen your brand with workflow optimizations and sophisticated business environments.",
+        icon: Building2,
+      },
+      {
+        question:
+          "Why is a site survey and feasibility study important before starting a fit-out project?",
+        answer:
+          "In our construction projects, a site survey and feasibility study are vital in evaluating the measurements, the structural possibilities and limits, and the overall potential of the property. These evaluations are done by our in-house architectural design team and are needed to ensure the practicality of the project and vision alignment so that you do not encounter expensive problems during the fit-out stage.",
+        icon: Ruler,
+      },
+      {
+        question:
+          "How does architectural 3D modeling help in the fit-out process?",
+        answer:
+          "Physically, architectural 3D modeling allows us to create a tangible view of a commercial structure which supersedes what can be obtained from a mere 2D drawing. The advancement permits visualization of the proposed fit-out design in question, including a virtual tour around the region which ensures satisfaction prior to deciding for the construction to take place.",
+        icon: Box,
+      },
+      {
+        question: "How long does a commercial fit-out project take?",
+        answer:
+          "The timeframe of a commercial fit-out project is defined by the size, complexity, and scope of the work involved. A project timeline is usually provided after the site survey and concept design stage. That is when CDC Construction places special emphasis on efficient project scheduling and management so that their clients' business downtime is reduced.",
+        icon: Clock,
+      },
+      {
+        question: "How much does a commercial fit-out cost?",
+        answer:
+          "A commercial fit-out cost is highly variable based on factors like the size of the space, design intricacy, the materials used, and custom features. CDC Construction designs fit-out solutions to suit the client's requirements, therefore pricing is tailored to provide clients with peace of mind that their financial resources will be maximized.",
+        icon: Wallet,
+      },
+    ],
   },
 ];
 export const NAVBAR = [
@@ -245,7 +697,8 @@ export const ALLHEROSECTION = [
     title:
       'Solid foundations for a <span class="block text-red-600">brighter future</span>',
     description:
-      "We are more than just a construction company. We understand that every project is unique, and we work closely with our clients to develop a customized plan that meets their specific goals and budget.",
+      // "We are more than just a construction company. We understand that every project is unique, and we work closely with our clients to develop a customized plan that meets their specific goals and budget.",
+      "Creative Design & Construction Limited (CDC), a leading construction company in London, is well-known for providing creative, sustainable, and high-quality construction solutions.we have continuously raised the bar for the industry by focusing on quality, efficiency, sustainability, and client satisfaction.",
     ctaButtons: [
       {
         title: "Start Your Project",
@@ -583,7 +1036,7 @@ export const FEATURES = [
   },
   {
     id: 7,
-    title: "10-Year Structural Warranty",
+    title: "Up to 10-Year Structural Warranty",
     description:
       "We stand behind the quality of our work. Our 10-year structural warranty provides you with long-term peace of mind.",
     icon: "https://cdc.construction/images/features/7.svg",
@@ -611,6 +1064,43 @@ export const FEATURES = [
 export const PORTFOLIO = [
   //Commercial
 
+  // #New Regent House 38
+  {
+    id: 38,
+    title: "Regent House",
+    subtitle: "Education",
+    description: "New Regent House 38",
+    longDescription:
+      "CDC Construction undertook a thrilling project an educational institute located in Leeds. Regent House is an educational facility under construction within the city. The focus of our team is to inspire pleasant and efficient spaces that meet contemporary standards and workflow patterns within learning environments. Meeting these objectives, the project involves custom design processes integrating modern technologies and appropriate level furnishings for the entire educational facility. Through optimum attention to detail and craftsmanship, we intend to provide the learners with comfort and efficiency. It will be done within the prescribed standards of precision to the educational facility with the aim of enhancing creativity and collaboration among the students and faculty. We at CDC Construction are very pleased to be part of the learning landscape of Leeds with Regent House and contribute towards meeting the needs of the region for advancement and educational growth.",
+    category: "Commercial",
+    location: "Leeds",
+    link: "regent-house-leeds",
+    siteMaplink: "/Commercial/regent-house-leeds",
+    image: "1.jpg",
+    alt: "Regent House Leeds",
+    featured: true,
+    images_link: "Comm/Regent_House",
+    images: 20,
+  },
+  // #New Wellesley House 39
+  {
+    id: 39,
+    title: "Wellesley House",
+    subtitle: "Education",
+    description: "New Regent House 38",
+    longDescription:
+      "Wellesley House in Ilford is a modern office space design and fit-out project under construction with CDC Construction as the main contractor. Our focus is cutting-edge design and inspiring interior architecture that is sleek and functional. These are highly detailed projects that require advanced engineering solutions for space design with effective best practices for fostering collaboration, creativity, and productivity. High-grade interiors with modern furnishings, sophisticated technology, and enhancement to the work experience for the user will be incorporated through seamless integration of all design elements. Iraq professional and contemporary office space for business innovation and success in Ilford. Wellesley House serves as CDC Construction’s centerpiece project in Ilford, seamlessly integrating all design elements with high precision fit outs executed in precision.",
+    category: "Commercial",
+    location: "Ilford",
+    link: "wellesley-house-ilford",
+    siteMaplink: "/Commercial/wellesley-house-ilford",
+    image: "1.jpg",
+    alt: "Wellesley House Ilford",
+    featured: false,
+    images_link: "Comm/Wellesley_House",
+    images: 19,
+  },
+
   // #New Harbour Exchange Square 5th Floor Canary Wharf 37
   {
     id: 37,
@@ -619,7 +1109,7 @@ export const PORTFOLIO = [
     description:
       "A state-of-the-art office complex featuring sustainable design elements and smart building technology.",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "CDC Construction undertook a fit-out contract for the Harbour Exchange Square’s 3rd floor located in Canary Wharf. This particular project aimed to change the space into a usable and aesthetically appealing area for business. Our team tailored an open, flexible design for the workspace which could be adapted to suit diverse corporate requirements. The modernized fit-out included technologically advanced design features in the offices, meeting rooms, and communal areas. By using ergonomic designs alongside high-quality finishes, we optimized comfort and productivity, improving their work experience while at the premises.",
     category: "Commercial",
     location: "Canary Wharf",
     link: "harbour-exchange-square-3rd-floor-canary-wharf",
@@ -639,7 +1129,7 @@ export const PORTFOLIO = [
     description:
       "A state-of-the-art office complex featuring sustainable design elements and smart building technology.",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "Centro is one of the latest projects by CDC Construction, located in Guildford, and includes the building of the new warehouse, existing building’s expansion, and the new kitchen which has been designed to modern standards. Moreover, our approach to this project contains the demolition scope in order to blend seamlessly with the new work. Our goal is to provide a high-quality build, safe compliant to standards and timelines. CDC Construction has extensive expert versed in commercial construction and is dedicated to offering a space that is modern and meets business needs. Through a combination of innovation and precise skills, attention to detail, and industrial speech we believe that Centro is bound to be an extraordinary construction work and an instant community value. We are excited to expand our footprint with this project and further develop Guildford.",
     category: "Commercial",
     location: "Guildford",
     link: "centro-office-space-guildford",
@@ -659,14 +1149,14 @@ export const PORTFOLIO = [
     description:
       "Project Size: 7000 Sqft Project Duration: 8 Weeks University Campus (1,300 Students and Staff) Fit-out work by adding facilities such as WC, Refurbishment, Extension, and re-modeling.",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "For Northampton Woodland House, CDC Construction completed the full fit-out of an educational campus. This covered the refurbishment of classrooms, common areas for students, and staff rooms to ensure they were aesthetically pleasing and practical for learning. The goal was to equip the facilities with advanced, modern, and effective frameworks for teaching and learning that enhanced collaboration, creativity, and scholarship. Moreover, we ensured that the design takes into account sustainability along with energy efficiency to further enhance the ecological friendliness of the area. Meticulous in approach and uncompromising in standards, the fit-out works transformed the building into a leading-edge educational facility that meets the learning requirements of the community.",
     category: "Commercial",
     location: "Northampton",
     link: "northampton-woodland-house",
     siteMaplink: "/Commercial/northampton-woodland-house",
     image: "1.jpg",
     alt: "notre-dame-house front image",
-    featured: true,
+    featured: false,
     images_link: "Comm/Woodland_house",
     images: 16, // number of images Actual IMAGES 16
     more: "Project Size: 7000 Sqft Project Duration: 8 Weeks University Campus (1,300 Students and Staff) Fit-out work by adding facilities such as WC, Refurbishment, Extension, and re-modeling.Project Size: 7000 Sqft Project Duration: 8 Weeks University Campus (1,300 Students and Staff) Fit-out work by adding facilities such as WC, Refurbishment, Extension, and re-modeling.",
@@ -679,7 +1169,7 @@ export const PORTFOLIO = [
     description:
       "A state-of-the-art office complex featuring sustainable design elements and smart building technology.",
     longDescription:
-      "A state-of-the-art office complex featuring sustainable design elements and smart building technology. The building is designed to be energy-efficient and has a range of features that reduce its environmental impact.\n\n This flagship commercial ",
+      "CDC Construction completed a fit-out project for Bridge House in Stratford and converted the space into a fully operational educational campus. They upgraded classrooms, laboratories, and common areas to meet contemporary standards. The design catered to staff and students by fostering collaboration and a positive learning environment through purposeful design elements. We ensured that all high-quality materials and efficient construction methods applied created a visually appealing,functional, and sustainable transformation. This has enhanced the educational infrastructure in Stratford and has given students and staff an engaging workspace.",
     category: "Commercial",
     location: "Stratford",
     link: "bridge-house-stratford",
@@ -699,7 +1189,7 @@ export const PORTFOLIO = [
     description:
       "A state-of-the-art office complex featuring sustainable design elements and smart building technology.",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "CDC Construction was given the responsibility of a fit-out project on the 5th floor of the Harbour Exchange Square, located in London’s Canary Wharf. This educational campus fit-out included transforming the floor into classrooms, study areas, and staff offices with modern aesthetic designs and a practical layout conducive to learning. Classrooms as well as study areas were equipped with cutting-edge facilities that were accessible and conducive to students’ and educators’ needs. CDC’s focus on the details allowed us to create an inspiring, efficient learning space that surpassed expectations.",
     category: "Commercial",
     location: "Canary Wharf",
     link: "harbour-exchange-square-5th-floor-canary-wharf",
@@ -718,7 +1208,7 @@ export const PORTFOLIO = [
     title: "York House",
     description: "",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "CDC Construction executed a detailed fit-out project for an educational campus using York House in Birmingham as a reference. The modification emphasized spatial allocation for classroom activities, and also included special features for common and administrative offices. Like other educational facilities, it aimed at providing a flexible learning zone while balancing comfort for students and teachers. We improved the aesthetic and architectural value of York House by employing modern materials, which also ensured that the building was eye-catching and collaborative. The learning design approach applied to this fit-out enhanced the visual appeal of the building, while meeting the requirements of contemporary teaching and learning environments.",
     category: "Commercial",
     location: "Birmingham",
     link: "york-house-birmingham",
@@ -737,7 +1227,7 @@ export const PORTFOLIO = [
     title: "Apsley House",
     description: "",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "For Birmingham's Apsley House which was planned to be an educational campus, CDC Construction undertook a fit-out project. Adapting the interior for student and faculty use required modernizing the interior, which involved more than just superficial changes. Classrooms, administrative offices, and common areas had to be multifunctional and suitable for learning. Our team worked to the best of their abilities so that the interior of the house was crafted to the best possible standard and met the prerequisites of the educational vision. The construction’s innovative design and technology provided great improvements to the space and now it is optimally vibrant and productive for its users.",
     category: "Commercial",
     location: "Birmingham",
     link: "apsley-house-birmingham",
@@ -756,7 +1246,7 @@ export const PORTFOLIO = [
     title: "Tabard Street",
     description: "",
     longDescription:
-      "This flagship commercial development represents a new standard in workplace design, combining cutting-edge technology with sustainable building practices. The structure features a double-skin glass facade that maximizes natural light while minimizing heat gain, reducing energy consumption by up to 30% compared to conventional office buildings.\n\nThe interior spaces are designed around a central atrium that brings natural light deep into the building core. Each floor offers flexible workspace configurations, allowing tenants to adapt their environments to changing needs. Smart building systems monitor and optimize energy usage, air quality, and occupancy patterns in real-time.\n\nThe project achieved LEED Platinum certification through its comprehensive sustainability strategy, including rooftop solar panels, rainwater harvesting, and a geothermal heating and cooling system. The surrounding landscape incorporates native plantings and bioswales to manage stormwater runoff and create outdoor gathering spaces for building occupants.",
+      "The Borough, London Tabard Street Project required complex fit-outs for a campus-type structure, integrating aesthetic beauty with functionality. Closely collaborating with the architects and designers, CDC Construction constructed a space that would be useful for the educational goals of the campus, and, at the same time, inviting. The scope of the fit-out works covered the construction of advanced class rooms, breaks areas as well as expanding administrative offices to add greater comfort and enhanced usability. With the application of appropriate quality finishes, accentuated by inventive design features, robust and multifunctional learner spaces which are educationally enticing and inspiring were developed. These spaces transformed the teaching and learning experiences of the students and faculty.",
     category: "Commercial",
     location: "Borough London",
     link: "tabard-street-borough-london",
@@ -776,6 +1266,8 @@ export const PORTFOLIO = [
     id: 23,
     title: "Galsworthy",
     description: "",
+    longDescription:
+      "This project consisted of a complete front extension, washroom renovation, and brick paving for the Galsworthy project in Ilford. Our team worked on the property extension and converted it into an additional space that increased the useful area of the home.\n\nThe modernization of the washroom was carried out with precision and high-quality materials. The brick paving created strong, aesthetically pleasing outdoor spaces, further improved the looks of the home, and made the property more functional. The unrivaled skill that CDC Construction possessed in all facets of property renovation guarantees the accomplishment of this project which enhanced the value of the home for many years.",
     category: "Residential",
     location: "Ilford",
     link: "galsworthy-ilford",
@@ -793,6 +1285,8 @@ export const PORTFOLIO = [
     id: 24,
     title: "NorthHill Drive",
     description: "",
+    longDescription:
+      "CDC Construction effortlessly completed the refurbishment of the entire house, plus a kitchen renovation, modernized loft addition, and other custom features at NorthHill Drive, Romford. The kitchen was remodeled into an easy-to-work-in space that is beautiful to look at and that serves as a multifunctional area for family gatherings. We converted the loft into a conditioned living space and fully remodeled the entire house to modern contemporary standards. Carefully attending to detail enabled us to achieve a home transformation with maximum appeal while maintaining balance throughout the property.",
     category: "Residential",
     location: "Romford",
     link: "northHill-drive-romford",
@@ -810,6 +1304,8 @@ export const PORTFOLIO = [
     id: 25,
     title: "Upton Lane",
     description: "",
+    longDescription:
+      "This Upton Lane project was for an entire office refurbishment for an existing client who wanted to modernize their workplace. CDC Construction undertook the entire renovation, which included customizing a more productive, aesthetically appealing, and comfortable environment for the business. Our team incorporated modern designs with strict best practices to create an effective and inviting office with high-grade materials. The scope of work included elevating the building's power systems and plumbing to contemporary standards so that the space’s aesthetics and practicality were in harmony in terms of longevity.",
     category: "Commercial",
     location: "Forest Gate",
     link: "upton-lane-forest-gate",
@@ -827,6 +1323,7 @@ export const PORTFOLIO = [
   //   id: 26,
   //   title: "Gaysham Avenu, Gants Hill",
   //   description: "",
+  //   longDescription: "For Gaysham Avenue in Gants Hill, CDC Construction undertook a double-storey side extension together with a loft conversion and refurbishment. The double-storey expansion provided additional floor area living space on both floors. The loft conversion transformed an existing attic into a bright and spacious bedroom, whilst additional storage space was also created. This project improved the value and comfort of the client's home while also enhancing its versatility and functionality for modern living with careful attention to design and structural integrity.",
   //   category: "Residential",
   //   link: "gaysham-avenu",
   //   image: "1.jpg",
@@ -842,6 +1339,8 @@ export const PORTFOLIO = [
     id: 27,
     title: "Roading Lane,Ilford",
     description: "",
+    longDescription:
+      "CDC Construction's undertakings relating to the Roading Lane project included the addition of external walkways and other features in the property’s landscaping. Our team combines the art of crafting functional outdoor spaces with appreciating its visual appeal. With advanced components and in accordance to the client's vision, we constructed robust walkways, patios, and garden areas that blend with the environment and the client's preferences. The hard landscaping put in place made the property's outdoor spaces versatile and inviting areas suited for relaxation and entertainment. The final result was a well-executed landscape that added value and beauty to the home.",
     category: "Residential",
     location: "Ilford",
     link: "roading-lane-ilford",
@@ -859,6 +1358,8 @@ export const PORTFOLIO = [
     id: 28,
     title: "Brambly Cresecnt, Gants Hill",
     description: "",
+    longDescription:
+      "CDC Construction completed a 6-meter single-storey rear extension and a double-storey rear extension for the Brambly Crescent project in Gants Hill. Both the ground and the first floors of the property were extended with the intent to maintain a flow into the original sections of the building. There was an increase in the design and layout of the house which helped in improving its overall livability by giving more space to accommodate family activities or guests. Employing modern techniques and materials in construction allowed us to expand the property’s functionality, market value while preserving the original appearance of the space.",
     category: "Residential",
     location: "Gants Hill",
     link: "brambly-cresecnt-gants-hill",
@@ -876,6 +1377,8 @@ export const PORTFOLIO = [
     id: 29,
     title: "Norman Close, Dartford",
     description: "",
+    longDescription:
+      "The Dratford Norman Close project incorporated a full rear extension, as well as a loft conversion to further improve the living area in the home. At CDC Construction, our team's aim was to make the most out of the space provided. With the rear extension, there was adequate space for living and hosting guests, while the inner attic area was conveniently transformed into a functional bedroom through the loft conversion. These improvements added to the comfort of the home by increasing the family’s living space as well as the space they could use in the house. The modernized aspect of the home was not only limited to the interior, but also was taken into consideration for the exterior of the house, stylishly modernizing the entire property, which had met the client’s requirements for a spacious home.",
     category: "Residential",
     location: "Dartford",
     link: "norman-close-dartford",
@@ -893,6 +1396,8 @@ export const PORTFOLIO = [
     id: 30,
     title: "East Ham",
     description: "",
+    longDescription:
+      "CDC Construction undertook the job of a rear and side extension for a property located in East Ham. Following the changes made by our skilled team, the ground floor of the property was also extended so that there was more living space in the house and more light could flow into the home. The extension increased the footprint of the home while preserving the structure and aesthetic appeal of the property. This created a comfortable and functional living space for the occupants which made the home great for family get together or private moments. There was no doubt that this project proved once more that we are committed to quality because our focus was on integrating the extension and the original property.",
     category: "Residential",
     location: "East Ham",
     link: "east-ham",
@@ -910,6 +1415,8 @@ export const PORTFOLIO = [
     id: 31,
     title: "Simon Lane, Chingford",
     description: "",
+    longDescription:
+      "The project at Simon Lane in Chingford included the addition of a 4-meter rear extension as well as the complete renovation of the ground floor. The ground floor extension added space for an even larger kitchen and dining area. The renovation of the ground floor was well coordinated to improve the aesthetics and structural functionality of the home to all the rooms. With regards to the property, this renovation showed a striking fusion of modern design with the existing structure, transforming the home into an upgraded tailored to fulfill the family’s needs. The end result was exceptionally pleasing, where, through the careful selection of materials,skilled craftsmanship, and design planning, we managed to maximize spaces, making it far more enjoyable for the clients.",
     category: "Residential",
     location: "Chingford",
     link: "simon-lane-chingford",
@@ -927,6 +1434,8 @@ export const PORTFOLIO = [
     id: 32,
     title: "9 Hainault Grove, Hainault",
     description: "",
+    longDescription:
+      "The CDC Construction managed the renovation and extension of the Hainault Grove project, which included adding a 4-meter rear extension. The newly added extension increased space within the kitchen and living area, improving the general flow of the house. During the ground floor renovation, the lighting, floor and general design of the house was changed, which improved the look and charm of the house. The property was changed into a modern family-friendly home by using the client’s preferred materials. This was achieved by paying attention to detail and using quality materials. Most importantly, the modern design and functional features were blended seamlessly. This demonstrates the need for modern homes that is available in the market today.",
     category: "Residential",
     location: "Hainault",
     link: "9-hainault-grove",
@@ -944,6 +1453,8 @@ export const PORTFOLIO = [
     id: 33,
     title: "7 Hainault Grove, Hainault",
     description: "",
+    longDescription:
+      "A property in Hainault Grove required kitchen remodeling and a 4-meter rear extension, which was comfortably completed by CDC Constructions. The further addition significantly advanced the living space and improved the family’s experience because the kitchen area became more open organized. The kitchen area was upgraded with new modern, tailored furnishings. Sophisticated branded equipment was employed and the design added was stylish while maintaining practicality. The construction team received special instructions on the design so that the extension and remodel preserved all the details of the existing structure. Appearing as a seamlessly integrated addition enhanced the aesthetic beauty of the house, making it more appealing to the client.",
     category: "Residential",
     location: "Hainault",
     link: "7-hainault-grove",
@@ -961,6 +1472,8 @@ export const PORTFOLIO = [
     id: 34,
     title: "154 Eastern Avenue, Outhouse, Redbridge",
     description: "",
+    longDescription:
+      "In the Redbridge area, the Eastern Avenue project included the development of a new one-bedroom flat with a large storage area. CDC Construction's team delivered a superb new build with top of the line amenities and comfort designed into every corner of the flat. The property was modernized, making it exceptionally appealing for an active lifestyle. Moreover, in addition to the living area, the extensive storage room enhanced the overall value of the property as it provided significant space for a tenant’s belongings. With our vast experience with new builds, the construction work was seamless, and the new build, sleek, and efficient living environment in a sought after area exceeded all expectations.",
     category: "Residential",
     location: "Outhouse, Redbridge",
     link: "154-eastern-avenue-outhouse-redbridge",
@@ -978,6 +1491,8 @@ export const PORTFOLIO = [
     id: 35,
     title: "152 Eastern Avenue, Outhouse,Redbridge",
     description: "",
+    longDescription:
+      "For another property located along Eastern Avenue in Redbridge, CDC Construction undertook a similar project of a new one-bedroom flat with expansive storage space. At cdc, we are proud to state that we completed the project within the defined budgetary and time constraints with high quality finishes for both the living and storage areas as set forth in the project guidelines. The primary objective of this new build was energy efficient functionality enhanced with modern touches which improves the overall appeal of the property and the primary storage area made this exceptionally ideal for urban living. Blending comfort with modern design proved that this project was a welcome addition to the expanding real estate market in Redbridge.",
     category: "Residential",
     location: "Outhouse, Redbridge",
     link: "152-eastern-avenue-outhouse-redbridge",
@@ -1038,13 +1553,18 @@ export const FOOTERLINKS = [
   },
 ];
 
+export const navigation = [
+  { title: "Home", href: "/" },
+  { title: "Services", href: "/services", items: services },
+  { title: "Projects", href: "/projects", items: PROJECT },
+  { title: "About", href: "/aboutus" },
+  { title: "Team", href: "/team" },
+  { title: "FAQs", href: "/faqs" },
+  { title: "Contact", href: "/contactus" },
+];
+
 // In your data file
-export const Home = {
-  tag: "Home",
-  company: "Creative Design & Construction Limited",
-  title: "Building Dreams, Delivering Excellence",
-  desc: "We are your trusted partner in construction, delivering innovative solutions and unparalleled craftsmanship from concept to completion. With unwavering professionalism and expertise, we bring your vision to life.",
-};
+
 export const About = {
   tag: "About",
   company: "Creative Design & Construction Limited",
@@ -1191,7 +1711,6 @@ export const NEWS = [
     image: "green_building.jpg",
   },
 ];
-
 export const TEAMMEMBER = [
   {
     id: 1,
@@ -1542,3 +2061,4 @@ export const TEAMMEMBER = [
     department: "Electrical",
   },
 ];
+export const FAQs = [];
