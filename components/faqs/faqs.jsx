@@ -1,7 +1,20 @@
 "use client";
 import React, { useState } from "react";
 
-import { Info, Wrench, Shield, HelpCircle, Plus, Minus } from "lucide-react";
+import {
+  Info,
+  Wrench,
+  Shield,
+  HelpCircle,
+  Plus,
+  Minus,
+  School,
+  Headset,
+  Leaf,
+} from "lucide-react";
+import SmallCTA from "../cta/smallCTA";
+import Heading from "../header/heading";
+import Link from "next/link";
 
 const FAQSection = () => {
   const faqCategories = [
@@ -11,105 +24,150 @@ const FAQSection = () => {
       icon: Info,
 
       description:
-        "Learn about CDC Construction's legacy of excellence and our commitment to innovative building solutions.",
+        "Creative Design & Construction Limited provides architectural and construction services in United Kingdom, focusing on sustainable projects since 2018.",
 
       questions: [
         {
-          q: "Who is CDC Construction?",
+          q: "What services does Creative Design & Construction Limited provide?",
 
-          a: "CDC Construction is an elite construction company established in 2018, renowned for delivering innovative, high-performance, and sustainable construction solutions. With a portfolio of prestigious projects across the UK, we combine architectural excellence with sustainable building practices to create exceptional spaces that stand the test of time.",
+          a: "CDC is able to provide a full service from architectural design, design and build service, loft conversions renovations, basement conversions, new builds, extensions and commercial fit out. We focus on residential and commercial projects throughout London and the surrounding regions.",
         },
 
         {
-          q: "What services does CDC Construction offer?",
+          q: "How long has CDC been in business?",
 
-          a: "We provide comprehensive construction services tailored to discerning clients:\n\n• Architectural Design & Planning\n• Luxury Home Construction\n• High-end Commercial Development\n• Bespoke Renovations\n• Premium Loft Conversions\n• Sustainable Building Solutions\n• Commercial Fit-outs\n\nEach service is delivered with meticulous attention to detail and uncompromising quality standards.",
+          a: "CDC is a team established in 2018 with over 30 years of combined experience in the industry focused on high-performance, energy-efficient, and sustainable building projects.",
         },
 
         {
-          q: "What makes CDC Construction unique?",
+          q: "What areas does CDC serve?",
 
-          a: "CDC Construction stands apart through our commitment to excellence:\n\n• Award-winning architectural designs\n• Innovative sustainable building practices\n• Premium material selection\n• Advanced construction technologies\n• Dedicated project management\n• Industry-leading warranties\n• Comprehensive after-care service\n\nOur holistic approach ensures every project exceeds expectations while maintaining the highest standards of craftsmanship.",
-        },
-
-        {
-          q: "How experienced is CDC Construction?",
-
-          a: "With over 30 years of combined industry expertise, our team has successfully delivered projects valued at over £100 million. Our portfolio includes landmark developments, luxury residences, and innovative commercial spaces across the UK. Each member of our leadership team brings specialized expertise from prestigious construction backgrounds, ensuring world-class execution on every project.",
+          a: "CDC operates in London and the surrounding areas, and their main office address is 595a Cranbrook Road, Ilford, IG2 6JZ, United Kingdom.",
         },
       ],
     },
 
     {
-      title: "Premium Services",
+      title: "Insurance and Warranties",
 
       icon: Wrench,
 
       description:
-        "Discover our comprehensive range of high-end construction and design services.",
+        "Creative Design & Construction Limited offers up to £10 million in coverage and a upto 10-year structural warranty, ensuring quality and peace of mind for clients.",
 
       questions: [
         {
-          q: "What distinguishes CDC Construction's architectural design services?",
+          q: "What types of coverage does CDC carry?",
 
-          a: "Our architectural design service combines cutting-edge technology with timeless aesthetics:\n\n• 3D visualization and virtual reality walkthroughs\n• Sustainable design integration\n• Smart home technology planning\n• Custom material selection\n• Energy efficiency optimization\n• Biophilic design elements\n\nEach design is crafted to create spaces that inspire and endure.",
+          a: "CDC has complete coverage up to £10 million, so full peace of mind for all clients from start to finish on their construction projects.",
         },
 
         {
-          q: "How does CDC Construction ensure project excellence?",
+          q: "Does CDC provide warranties?",
 
-          a: "We maintain excellence through our comprehensive project management approach:\n\n• Dedicated project managers\n• Real-time progress tracking\n• Quality control at every stage\n• Regular client consultations\n• Detailed documentation\n• Strict timeline adherence\n• Budget optimization\n\nThis systematic approach ensures consistent delivery of exceptional results.",
-        },
-
-        {
-          q: "What innovative technologies does CDC Construction employ?",
-
-          a: "We leverage cutting-edge construction technologies:\n\n• BIM (Building Information Modeling)\n• Drone site surveys\n• 3D printing capabilities\n• Smart building systems\n• Energy modeling software\n• Advanced material testing\n• IoT integration\n\nThese technologies enable us to deliver superior results while optimizing efficiency.",
+          a: "CDC offers a upto 10-year structural warranty on their work, showcasing their dedication to quality and long-lasting customer satisfaction.",
         },
       ],
     },
 
     {
-      title: "Quality Assurance",
+      title: "Project Management and Quality",
 
       icon: Shield,
 
       description:
-        "Understanding our commitment to excellence and client protection.",
+        "Creative Design & Construction Limited ensures project quality through dedicated site engineers and strict quality assurance, while maintaining timelines with effective management and client communication.",
 
       questions: [
         {
-          q: "What quality standards does CDC Construction maintain?",
+          q: "Q: How does CDC ensure project quality?",
 
-          a: "We uphold the highest industry standards:\n\n• ISO 9001:2015 certification\n• BREEAM excellence ratings\n• RIBA compliance\n• Sustainable construction practices\n• Regular third-party audits\n• Comprehensive quality management system\n\nOur commitment to quality is unwavering and documented at every project stage.",
+          a: "At CDC we ensure high quality by having dedicated site engineers to supervise works to ensure that the quality of work is realised through strict quality assurance process and a focus for detail. All projects are built to HSA and building code.",
         },
 
         {
-          q: "What warranties and guarantees does CDC Construction offer?",
+          q: "What is CDC approach to project timelines?",
 
-          a: "Our comprehensive warranty package includes:\n\n• 10-year structural warranty\n• 5-year workmanship guarantee\n• 2-year mechanical systems warranty\n• Manufacturer warranties on all materials\n• Extended warranty options available\n• Regular maintenance programs\n\nAll backed by our substantial insurance coverage and financial stability.",
+          a: "We ensure that projects are on-time through effective project management, and regular supervision and communication with the clients during the construction process.",
         },
       ],
     },
 
     {
-      title: "Client Experience",
+      title: "Services Specific",
 
-      icon: HelpCircle,
+      icon: School,
 
-      description: "Experience our premium client service and support process.",
+      description:
+        "Creative Design & Construction Limited handles commercial office projects, including fit-outs and new builds, and offers residential services like renovations and extensions, alongside comprehensive architectural design services.",
 
       questions: [
         {
-          q: "What is the CDC Construction client journey?",
+          q: "What types of commercial projects does CDC handle?",
 
-          a: "Our premium client experience includes:\n\n• Personal project consultant\n• Detailed design consultations\n• Regular progress updates\n• Virtual reality presentations\n• Material selection support\n• Timeline planning\n• Budget management\n• Post-completion care\n\nWe ensure a seamless and enjoyable journey from concept to completion.",
+          a: "CDC is focused on building commercial office space with a mix of work from fit-outs, renovations and new construction. Among the noteworthy projects is the work at Harbour Exchange Square in Canary Wharf and Centro Office Space in Guildford.",
         },
 
         {
-          q: "How does CDC Construction handle project communication?",
+          q: "What residential services does CDC offer?",
 
-          a: "We maintain transparent and efficient communication through:\n\n• Dedicated client portal\n• Weekly progress reports\n• 24/7 emergency contact\n• Regular site meetings\n• Digital documentation access\n• Video conference updates\n• Professional photography\n\nEnsuring you're always informed and involved in your project's progress.",
+          a: "We offer residential services including full house renovations, loft conversions, basement conversions, extensions and new builds. We take projects from design through construction.",
+        },
+        {
+          q: "Does CDC provide architectural design services?",
+
+          a: "Absolutely, with the ability to communicate with a design team early on, CDC can facilitate design choices that can enhance the project without blowing the budget; we can bring your vision into physical reality",
+        },
+      ],
+    },
+
+    {
+      title: "Customer Support",
+
+      icon: Headset,
+
+      description:
+        "Creative Design & Construction Limited provides comprehensive after-care support and offers free quotes via phone, email, or their website contact form.",
+
+      questions: [
+        {
+          q: "What kind of after-care support does CDC provide?",
+
+          a: "CDC offers comprehensive after-care services to ensure a smooth transition into new spaces and provides ongoing support for all completed projects.",
+        },
+
+        {
+          q: "Q: How can I get a quote for my construction project?",
+
+          a: "A: You can request a free quote by contacting Creative Design & Construction Limited at 020-8004-3327, emailing info@cdc.construction, or filling out the contact form on their website.",
+        },
+      ],
+    },
+
+    {
+      title: "Technical Expertise",
+
+      icon: Leaf,
+
+      description:
+        "Creative Design & Construction Limited emphasizes sustainability through energy-efficient building practices, offers tailored construction solutions, and distinguishes itself with exceptional customer service and quality control.",
+
+      questions: [
+        {
+          q: "What steps does CDC take to become more sustainable?",
+
+          a: "CDC focuses on creating energy-efficient, sustainable buildings by incorporating the latest manufacturing technologies and current methods in construction.",
+        },
+
+        {
+          q: "What customization can CDC provide for a project?",
+
+          a: "We developed tailored construction solutions as per each project, collaborating with clients to customize designs and specifications to their particular needs and vision.",
+        },
+        {
+          q: "What makes CDC different than any other contractor?",
+
+          a: "CDC stands out due to its focus on customer service, successful projects history, full insurance coverage, experienced professionals, and quality control.",
         },
       ],
     },
@@ -145,23 +203,12 @@ const FAQSection = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="inline-block">
-            <span
-              className="px-4 py-1 rounded-full bg-red-50 text-red-600 text-sm font-semibold mb-4 inline-block
+          <SmallCTA text={"Knowledge Center"} />
+          <Heading title={"Frequently Asked"} subtitle={"Questions"} />
 
-animate-fade-in-up"
-            >
-              Knowledge Center
-            </span>
-          </div>
-
-          <h2 className="text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-            Frequently Asked Questions
-          </h2>
-
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover how CDC Construction is setting new standards in premium
-            construction and architectural excellence.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+            Discover how Creative Design & Construction is setting new standards
+            in premium construction and architectural excellence.
           </p>
         </div>
 
@@ -281,8 +328,8 @@ transform transition-all duration-1000 ${
           </p>
 
           <div className="space-x-4">
-            <a
-              href="/contact"
+            <Link
+              href="/contactus"
               className="inline-flex items-center px-8 py-4 border-2 border-red-500 text-lg font-semibold rounded-xl
 
 text-white bg-red-500 hover:bg-red-600 hover:border-red-600 transition-all duration-300
@@ -290,18 +337,18 @@ text-white bg-red-500 hover:bg-red-600 hover:border-red-600 transition-all durat
 transform hover:scale-105 hover:-translate-y-1"
             >
               Schedule a Consultation
-            </a>
+            </Link>
 
-            <a
-              href="/portfolio"
+            <Link
+              href="/projects"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-semibold rounded-xl
 
 text-white hover:bg-white hover:text-gray-900 transition-all duration-300
 
 transform hover:scale-105 hover:-translate-y-1"
             >
-              View Our Portfolio
-            </a>
+              View Our Projects
+            </Link>
           </div>
         </div>
       </div>

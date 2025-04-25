@@ -76,18 +76,39 @@ const Sector = () => {
           </span>
         </h2>
         <div className="my-20"></div>
-        <div className="mt-16 grid w-full grid-cols-2 gap-px bg-red-500 md:grid-cols-3">
+        <div className="mt-16 grid w-full grid-cols-2 md:grid-cols-3 gap-8">
           {SECTORS.map((data) => (
-            <div
-              key={data?.id}
-              className="flex w-full flex-col items-center justify-center gap-6 bg-white px-3 py-4 md:gap-8 md:px-6 md:py-8"
-            >
-              <div className="flex size-20 items-center justify-center rounded-xl border border-red-100 bg-white drop-shadow-lg p-3">
-                <img src={data?.icon} alt={data?.name} />
+            // <div
+            //   key={data?.id}
+            //   className="flex w-full flex-col items-center justify-center gap-6 bg-white px-3 py-4 md:gap-8 md:px-6 md:py-8"
+            // >
+            //   <div className="flex size-20 items-center justify-center rounded-xl border border-red-100 bg-white drop-shadow-lg p-3">
+            //     <img src={data?.icon} alt={data?.name} />
+            //   </div>
+            //   <h2 className="text-lg text-pretty font-medium text-neutral-900">
+            //     {data?.name}
+            //   </h2>
+            // </div>
+            <div key={data?.id} className="relative group">
+              <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 group-hover:border-red-100">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="relative">
+                    <div className="absolute -inset-4 bg-red-50 rounded-xl transform rotate-6 transition-transform group-hover:rotate-12"></div>
+
+                    {/* <div className="relative bg-gradient-to-br from-red-500 to-red-600 p-4 rounded-xl transform transition-transform group-hover:scale-105"> */}
+                    <div className="w-12 h-12 relative">
+                      <img src={data?.icon} alt={data?.name} />
+                    </div>
+                    {/* </div> */}
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-gray-900 mt-4">
+                    {data.name}
+                  </h3>
+
+                  <div className="w-12 h-1 bg-gradient-to-r from-red-500 to-red-600 rounded-full transform transition-all duration-300 group-hover:w-24"></div>
+                </div>
               </div>
-              <h2 className="text-lg text-pretty font-medium text-neutral-900">
-                {data?.name}
-              </h2>
             </div>
           ))}
         </div>
